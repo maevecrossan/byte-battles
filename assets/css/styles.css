@@ -25,17 +25,23 @@ header {
 
 h1 {
     font-size: 50px;
-    padding: 15px;
+    padding: 15px;                    
 }
 
 h2 {
     font-size: 35px;
 }
 
+.text-shadow {
+    text-shadow: 0 0 5px rgba(233, 250, 249, 0.552),
+                0 0 10px rgba(233, 250, 249, 0.552),
+                0 0 15px rgba(233, 250, 249, 0.552);
+}
+
 /* -------- Game Board Styles */
 #board {
     margin: 40px 0 10px 0;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     display: grid;
     justify-content: center;
@@ -59,12 +65,26 @@ h2 {
 
 /* -------- Tally Container Styles */
 #tally-container {
-    margin: 40px 0 0 0;
+    margin: 40px 0 30px 0;
 }
 
 .tally {
     color:	rgb(173, 224, 231);
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 450;
     padding: 10px 0 10px 0;
+}
+
+/* New game button */
+#new-game {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px;
+    line-height: 30px;
+    font-family: 'Orbitron', Helvetica, sans-serif;
+    background-color: rgb(209, 5, 117);
+    color: white;
+    border: 2px solid rgba(237, 168, 206, 0.865);
+    border-radius: 5px;
 }
