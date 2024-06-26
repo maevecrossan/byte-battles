@@ -108,12 +108,23 @@ h2 {
 .board-slot.o::before,
 .board-slot.o::after {
     content: ''; /*empty string*/
+    border-radius: 50%;
     position: absolute;
-    width: 15%;
+}
+
+/* Outer Circle */
+.board-slot.o::before {
+    width: 90%;
     height: 90%;
     background-color: orange;
 }
 
+/* Inner Circle */
+.board-slot.o::after {
+    width: 65%; 
+    height: 65%;
+    background-color: rgb(31, 0, 75);
+}
 
 /* -------- Tally Container Styles */
 #tally-container {
