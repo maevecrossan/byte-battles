@@ -87,8 +87,8 @@ h2 {
 
 /* Individual Slots */
 /* Creates X */
-#x::before,
-#x::after {
+.board-slot.x::before,
+.board-slot.x::after {
     content: ''; /*empty string*/
     position: absolute;
     width: 15%;
@@ -96,13 +96,24 @@ h2 {
     background-color: orange;
 }
 
-#x::before {
+.board-slot.x::before {
     transform: rotate(45deg);
 }
 
-#x::after {
+.board-slot.x::after {
     transform: rotate(-45deg);
 }
+
+/* Creates O */
+.board-slot.o::before,
+.board-slot.o::after {
+    content: ''; /*empty string*/
+    position: absolute;
+    width: 15%;
+    height: 90%;
+    background-color: orange;
+}
+
 
 /* -------- Tally Container Styles */
 #tally-container {
