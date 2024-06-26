@@ -34,14 +34,25 @@ h2 {
 
 /* -------- Game Board Styles */
 #board {
+    margin: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 10px;
 }
 
+.board-slot {
+    border: 2px solid white;
+    height: 90px;
+    width: 90px;
+    margin-inline: auto; /* aligns slot boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: 	rgb(236, 52, 153);
+}
 
 /* -------- Tally Container Styles */
 .tally {
