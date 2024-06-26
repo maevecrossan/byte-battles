@@ -41,26 +41,47 @@ h2 {
 /* -------- Game Board Styles */
 #board {
     margin: 40px 0 10px 0;
-    color: white;
     text-align: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
 }
 
 .board-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* slot styles */
     border: 3px solid white;
-    height: 90px;
-    width: 90px;
-    margin-inline: auto; /* aligns slot boxes */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100px;
+    width: 100px;
     /* X O styles */
     color: 	rgb(236, 52, 153);
-    font-size: 60px;
+    font-size: 80px;
+}
+
+/* Removes outer-most border */
+.board-slot:first-child,
+.board-slot:nth-child(2),
+.board-slot:nth-child(3) {
+    border-top: none;
+}
+
+.board-slot:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.board-slot:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.board-slot:nth-child(7),
+.board-slot:nth-child(8),
+.board-slot:last-child {
+    border-bottom: none;
 }
 
 /* -------- Tally Container Styles */
@@ -87,4 +108,5 @@ h2 {
     color: white;
     border: 2px solid rgba(237, 168, 206, 0.865);
     border-radius: 5px;
+    margin-bottom: 80px;
 }
