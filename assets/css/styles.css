@@ -1,22 +1,50 @@
+/* Google Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* Wildcard Selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* -------- General Styles */
 
 body {
     background-color: rgb(31, 0, 75);
+    /* text styles */
+    font-family: 'Orbitron', Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(84, 239, 234);
 }
 
 /* -------- Header / Game Title Styles */
-h1, h2 {
- color: rgb(84, 239, 234);
+header {
+    padding: 5px;
 }
 
+h1 {
+    font-size: 50px;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 35px;
+}
 
 /* -------- Game Board Styles */
 #board {
     color: rgb(255, 255, 255);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 
 /* -------- Tally Container Styles */
 .tally {
     color: 	rgb(173, 224, 231);
+    text-align: center;
 }
