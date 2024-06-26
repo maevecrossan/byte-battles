@@ -1,0 +1,22 @@
+/* -------- General Styles */
+
+body {
+    background-color: rgb(31, 0, 75);
+}
+
+/* -------- Header / Game Title Styles */
+h1, h2 {
+ color: rgb(84, 239, 234);
+}
+
+
+/* -------- Game Board Styles */
+#board {
+    color: rgb(255, 255, 255);
+}
+
+
+/* -------- Tally Container Styles */
+.tally {
+    color: 	rgb(173, 224, 231);
+}
