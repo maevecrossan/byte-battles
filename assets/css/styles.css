@@ -34,7 +34,7 @@ h2 {
 
 /* -------- Game Board Styles */
 #board {
-    margin: 10px 0 10px 0;
+    margin: 40px 0 10px 0;
     color: rgb(255, 255, 255);
     text-align: center;
     display: grid;
@@ -58,6 +58,10 @@ h2 {
 }
 
 /* -------- Tally Container Styles */
+#tally-container {
+    margin: 40px 0 0 0;
+}
+
 .tally {
     color:	rgb(173, 224, 231);
     text-align: center;
