@@ -202,8 +202,8 @@ h3 {
     display: flex;
 }
 
-/* New game button */
-#new-game {
+/* New game & Next Round buttons */
+button {
     font-size: 20px;
     font-weight: 600;
     padding: 8px;
@@ -213,7 +213,9 @@ h3 {
     color: white;
     border: 2px solid rgba(237, 168, 206, 0.865);
     border-radius: 5px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 150px;
 }
 
 button:hover {
