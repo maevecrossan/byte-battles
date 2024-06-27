@@ -1,30 +1,20 @@
-// Let DOM load before starting the game
-// Add event listeners
+// Waits for the DOM to load before initailising game.
 
 document.addEventListener("DOMContentLoaded" , function() {
-    // Connect inputs to DOM
-    const board = document.getElementById('board');
-
-    let playerX = 'X';
-    let playerO = 'O';
-    let currentPlayer = playerX;
-    let boardSlots = document.getElementsByClassName('board-slot')
+    // Selects all board slots (where X's and O's can be placed)
+    const boardSlots = document.getElementsByClassName('board-slot')
+    // Establishes first player when game loads
+    let currentPlayer = 'x';
+    // Add click event to each board slot
     for (const slot of boardSlots) {
-        slot.addEventListener('click', slotClick);
-    }
+
+
+        // checks if box is occupied by an 'x' or 'o'
+        slot.addEventListener('click', function occupiedCheck() {
+            if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
+                // add current player's character to the chosen slot.
+                slot.classList.add(currentPlayer);
+            }
+        })
+    } 
 })
-
-/**
- * Registers clicking events on game board slots.
- */
-function slotClick(event) {
-    const slot = event.target;
-    slot.classList.add(currentPlayer);
-    // place character
-// check win
-// check loss
-// swap player
-}
-
-
- 
