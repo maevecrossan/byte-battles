@@ -35,7 +35,6 @@ h2 {
 
 h3 {
     font-size: 30px;
-    text-decoration: underline;
 }
 
 .text-shadow {
@@ -177,6 +176,29 @@ h3 {
     padding: 10px 0 10px 0;
 }
 
+/* Winner Message */
+.win-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(31, 0, 75, 0.93);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-message h3 {
+    margin: 30px;
+    font-size: 50px;
+}
+
+.win-message .display {
+    display: flex;
+}
+
 /* New game button */
 #new-game {
     font-size: 20px;
@@ -189,4 +211,8 @@ h3 {
     border: 2px solid rgba(237, 168, 206, 0.865);
     border-radius: 5px;
     margin-bottom: 80px;
+}
+
+button:hover {
+    opacity: 0.7
 }
