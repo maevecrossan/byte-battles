@@ -3,22 +3,28 @@
 
 document.addEventListener("DOMContentLoaded" , function() {
     // Connect inputs to DOM
-
     const board = document.getElementById('board');
-    
-    let boardSlot = document.querySelectorAll('data-slot');
-    
-    boardSlot.addEventListener('click', slotClick, {once:true});
 
-    let nextRound = document.getElementById('next-round');
-    let newGame = document.getElementById('new-game');
-}
-)
+    let playerX = 'X';
+    let playerO = 'O';
+    let currentPlayer = playerX;
+    let boardSlots = document.getElementsByClassName('board-slot')
+    for (const slot of boardSlots) {
+        slot.addEventListener('click', slotClick);
+    }
+})
 
-/** 
- * Registers clicks on game board slots
+/**
+ * Registers clicking events on game board slots.
  */
-
 function slotClick(event) {
-    console.log('clicked');
+    const slot = event.target;
+    slot.classList.add(currentPlayer);
+    // place character
+// check win
+// check loss
+// swap player
 }
+
+
+ 
