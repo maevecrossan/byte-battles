@@ -94,6 +94,17 @@ h3 {
 /* Individual Slots */
 /* Credits: X and O from Web Dev Simplified */
 /* Creates X & hover*/
+
+.board-slot.x::before,
+.board-slot.x::after {
+    background-color: rgb(187, 255, 0);
+}
+
+.board.x .board-slot:not(.x):not(.o):hover::before,
+.board.x .board-slot:not(.x):not(.o):hover::after {
+    background-color: rgb(225, 255, 141, 0.95);
+}
+
 .board-slot.x::before,
 .board-slot.x::after, 
 .board.x .board-slot:not(.x):not(.o):hover::before,
@@ -102,36 +113,48 @@ h3 {
     position: absolute;
     width: 15%;
     height: 90%;
-    background-color: orange;
 }
 
 .board-slot.x::before, 
-.board.x .board-slot:hover::before {
+.board.x .board-slot:not(.x):not(.o):hover::before {
     transform: rotate(45deg);
 }
 
 .board-slot.x::after, 
-.board.x .board-slot:hover::after {
+.board.x .board-slot:not(.x):not(.o):hover::after {
     transform: rotate(-45deg);
 }
 
 /* Creates O */
+
 .board-slot.o::before,
 .board-slot.o::after {
+    background-color: rgb(255, 0, 251);;
+}
+
+.board.o .board-slot:not(.x):not(.o):hover::before {
+    background-color: rgba(250, 189, 249, 0.95);
+}
+
+.board-slot.o::before,
+.board-slot.o::after, 
+.board.o .board-slot:not(.x):not(.o):hover::before,
+.board.o .board-slot:not(.x):not(.o):hover::after {
     content: ''; /*empty string*/
     border-radius: 50%;
     position: absolute;
 }
 
 /* O Outer Circle */
-.board-slot.o::before {
+.board-slot.o::before, 
+.board-slot:not(.x):not(.o):hover::before {
     width: 90%;
     height: 90%;
-    background-color: orange;
 }
 
 /* O Inner Circle */
-.board-slot.o::after {
+.board-slot.o::after, 
+.board-slot:not(.x):not(.o):hover::after {
     width: 65%; 
     height: 65%;
     background-color: rgb(31, 0, 75);
