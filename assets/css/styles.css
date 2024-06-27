@@ -164,7 +164,7 @@ h3 {
     margin: 40px 0 30px 0;
 }
 
-#p2-tally {
+#p-o-tally {
     margin-top: 30px;
 }
 
@@ -177,7 +177,8 @@ h3 {
 }
 
 /* Winner Message */
-.win-message {
+.win-message, 
+.draw-message {
     display: none;
     position: fixed;
     top: 0;
@@ -190,12 +191,14 @@ h3 {
     align-items: center;
 }
 
-.win-message h3 {
+.win-message h3,
+.draw-message h3 {
     margin: 30px;
     font-size: 50px;
 }
 
-.win-message .display {
+.win-message .display,
+.draw-message .display {
     display: flex;
 }
 
