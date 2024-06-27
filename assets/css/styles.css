@@ -92,10 +92,12 @@ h3 {
 }
 
 /* Individual Slots */
-/* Credits: X and O creation from Web Dev Simplified */
-/* Creates X */
+/* Credits: X and O from Web Dev Simplified */
+/* Creates X & hover*/
 .board-slot.x::before,
-.board-slot.x::after {
+.board-slot.x::after, 
+.board.x .board-slot:not(.x):not(.o):hover::before,
+.board.x .board-slot:not(.x):not(.o):hover::after {
     content: ''; /*empty string*/
     position: absolute;
     width: 15%;
@@ -103,11 +105,13 @@ h3 {
     background-color: orange;
 }
 
-.board-slot.x::before {
+.board-slot.x::before, 
+.board.x .board-slot:hover::before {
     transform: rotate(45deg);
 }
 
-.board-slot.x::after {
+.board-slot.x::after, 
+.board.x .board-slot:hover::after {
     transform: rotate(-45deg);
 }
 
