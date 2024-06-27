@@ -224,7 +224,7 @@ button:hover {
 
 /* Tablets and above */
 @media screen and (min-width: 768px){
-    #tally-container {
+    .direction-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -245,6 +245,10 @@ button:hover {
 
     .player {
         padding: 20px;
+    }
+
+    .pink-button {
+        margin: 40px 45px 0 50px;
     }
 }
     

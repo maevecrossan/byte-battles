@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     let boardSlot = document.getElementsByClassName('board-slot');
     console.log(boardSlot);
 
-    
+    let nextRound = document.getElementById('next-round');
+    let newGame = document.getElementById('new-game');
 }
 )
