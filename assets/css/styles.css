@@ -16,6 +16,7 @@ body {
     font-family: 'Orbitron', Helvetica, sans-serif;
     text-align: center;
     color: rgb(84, 239, 234);
+    margin-top: 30px;
 }
 
 /* -------- Header / Game Title Styles */
@@ -86,6 +87,7 @@ h2 {
 }
 
 /* Individual Slots */
+/* Credits: X and O creation from Web Dev Simplified */
 /* Creates X */
 .board-slot.x::before,
 .board-slot.x::after {
