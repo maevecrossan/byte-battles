@@ -114,14 +114,14 @@ h2 {
     position: absolute;
 }
 
-/* Outer Circle */
+/* O Outer Circle */
 .board-slot.o::before {
     width: 90%;
     height: 90%;
     background-color: orange;
 }
 
-/* Inner Circle */
+/* O Inner Circle */
 .board-slot.o::after {
     width: 65%; 
     height: 65%;
