@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     // Selects all board slots (where X's and O's can be placed)
     const boardSlots = document.getElementsByClassName('board-slot')
     // Establishes first player when game loads
-    let currentPlayer = 'x';
+    let currentPlayer = "x";
     // Add click event to each board slot
     for (const slot of boardSlots) {
 
@@ -17,16 +17,19 @@ document.addEventListener("DOMContentLoaded" , function() {
                 slot.classList.add(currentPlayer);
 
                 if (winResult(currentPlayer)){
-                    displayWinMessage(currentPlayer);
+                    displayWinMessage(currentPlayer); // display win message if combo was achieved.
                 } else if (drawResult()) {
-                    displayDrawMessage();
-                } else {
-                    currentPlayer = currentPlayer === 'x' ? 'o' : 'x';
+                    displayDrawMessage(); //display draw message if no combo achieved and board is full.
+                } else { // player swap
+                    if (currentPlayer === 'x') {
+                        currentPlayer = 'o';
+                    } else {
+                        currentPlayer = 'x';
+                    }
                 }
             }
         })
     } 
-
 })
 
 /**
@@ -45,8 +48,10 @@ function winResult(player) {
             return boardSlots[index].classList.contains(player); //checks for player characters in relevant indeces/slots. 
         });
         console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // log pattern check. Checks for win for current player.
-        return isWinningPattern; //stops function. Returns boolean value to confirm if a combo is found or not.
-    }) // 
+        return isWinningPattern; //Returns boolean value to confirm if a combo is found or not.
+    })
+    console.log(`${player} win status: ${result}`)
+    return result; //returns result of win check.
 }
 
 /**
