@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     addWinPoint(currentPlayer); 
                     displayWinMessage(currentPlayer);
                 } else if (drawResult()) {
+                    addDrawPoint();
                     displayDrawMessage();
                 } else { // Player swap if neither win or draw
                     currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
@@ -76,25 +77,24 @@ function drawResult() {
     let playerO = 'o';
     let currentPlayer = 'playerX';
     const boardSlots = document.getElementsByClassName('board-slot');
-    // Check if all board slots are occupied. 
-    for (const slot of boardSlots) {
-        if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
-            return false; //If a slot is free, no draw.
-        }
-    }
+    const allOccupied = [...boardSlots].every(slot => {
+        const occupied = slot.classList.contains('x') || slot.classList.contains('o');
+        console.log(`Slot occupied status: ${occupied}`);
+        return occupied;
+    })
+    console.log(`Draw Result: ${allOccupied}`);
+    return allOccupied;
 }
 
-function addDrawPoint() {
-    if (winResult = (!currentPlayer)) {
-        if (currentPlayer === !'x') {
+function addDrawPoint(currentplayer) {
+    if (drawResult = true) {
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
             document.getElementById('p-x-draws').innerHTML = ++xDraws;
-        } else if (currentPlayer === 'o') {
-            let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
-            document.getElementById('p-o-draws').innerHTML = ++odraws;
+            let oDraws = parseInt(document.getElementById('p-o-wins').innerHTML);
+            document.getElementById('p-o-draws').innerHTML = ++oDraws;
         }
     }
-}
+
 
 
 /**
