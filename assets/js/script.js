@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Check if win or draw conditions are met.
                 if (winResult(currentPlayer)){
                     addWinPoint(currentPlayer); 
+                    addLossPoint(currentPlayer)
                     displayWinMessage(currentPlayer);
                 } else if (drawResult()) {
                     addDrawPoint();
@@ -110,8 +111,16 @@ function lossResult() {
 
 }
 
-function addLossPoint() {
-
+function addLossPoint(currentPlayer) {
+    if (winResult = (currentPlayer)) {
+        if (currentPlayer === 'o') {
+            let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
+            document.getElementById('p-x-losses').innerHTML = ++xLoss;
+        } else if (currentPlayer === 'x') {
+            let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
+            document.getElementById('p-o-losses').innerHTML = ++oLoss;
+        }
+    }
 }
 
 
