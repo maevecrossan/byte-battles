@@ -1,36 +1,38 @@
 // Waits for the DOM to load before initailising game.
 
-document.addEventListener("DOMContentLoaded" , function() {
+document.addEventListener("DOMContentLoaded", function() {
     // Selects all board slots (where X's and O's can be placed)
-    const boardSlots = document.getElementsByClassName('board-slot')
+    const boardSlots = document.getElementsByClassName('board-slot');
     // Establishes first player when game loads
-    let currentPlayer = "x";
+    let playerX = 'x';
+    let playerO = 'o';
+    let currentPlayer = playerX; // Sets X as initial player.
+
     // Add click event to each board slot
     for (const slot of boardSlots) {
 
-
-        // checks if box is occupied by an 'x' or 'o'
+        // Checks if the box is occupied by an 'x' or 'o'
         slot.addEventListener('click', function occupiedCheck() {
             if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
-                // if unoccupied, add current player's 
-                // character to the chosen slot.
+                // If unoccupied, add current player's character to the chosen slot.
                 slot.classList.add(currentPlayer);
 
                 if (winResult(currentPlayer)){
-                    displayWinMessage(currentPlayer); // display win message if combo was achieved.
+                    displayWinMessage(currentPlayer); // Display win message if combo was achieved.
                 } else if (drawResult()) {
-                    displayDrawMessage(); //display draw message if no combo achieved and board is full.
-                } else { // player swap
-                    if (currentPlayer === 'x') {
-                        currentPlayer = 'o';
+                    displayDrawMessage(); // Display draw message if no combo is achieved or the board is full.
+                } else { // Player swap
+                    if (currentPlayer === playerX) {
+                        currentPlayer = playerO;
                     } else {
-                        currentPlayer = 'x';
+                        currentPlayer = playerX;
                     }
+                    console.log(`Next player:${currentPlayer}`); // Player logging for debugging.
                 }
             }
-        })
+        });
     } 
-})
+});
 
 /**
  * Checks for win one of the winning combinations.
@@ -57,8 +59,9 @@ function winResult(player) {
 /**
  * Displays hidden winner message.
  */
-function displayWinMessage() {
-
+function displayWinMessage(player) {
+    const winMessage = document.getElementById('win-message');
+    winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`
 }
 
 //Checks for lossResult
@@ -67,7 +70,7 @@ function displayWinMessage() {
  * Checks for a draw result.
  */
 function displayDrawMessage() {
-
+    const drawMessage = document.getElementById('draw-message');
 }
 
 //Show draw message
