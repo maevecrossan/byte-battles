@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click event to each board slot
     for (const slot of boardSlots) {
-
+        
         // Checks if the box is occupied by an 'x' or 'o'
         slot.addEventListener('click', function occupiedCheck() {
             if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     displayWinMessage(currentPlayer); // Display win message if combo was achieved.
                 } else if (drawResult()) {
                     displayDrawMessage(); // Display draw message if no combo is achieved or the board is full.
-                } else { // Player swap
+                } else { // Player swap if neither win or draw
                     if (currentPlayer === playerX) {
                         currentPlayer = playerO;
                     } else {
@@ -38,22 +38,22 @@ document.addEventListener("DOMContentLoaded", function() {
  * Checks for win one of the winning combinations.
  */
 function winResult(player) {
-    // Winning combinations (based on article form stack overflow)
-    const winningCombos = [
+    const boardSlots = document.getElementsByClassName('board-slot'); // Selects all board slots
+    const winningCombos = [ // Winning combinations (based on article form stack overflow)
         [0, 1, 2],[3, 4, 5],[6, 7, 8], // rows
         [0, 3, 6],[1, 4, 7],[2, 5, 8], // columns
         [0, 4, 8],[2, 4, 6]            // diagonals
     ];
     
-    const result = winningCombos.some(combo => { // checks for winning combos on the game board.
-        const isWinningCombo = combo.every(index=> { //checks if relevant indeces/slots for a pattern are occupied by the current player.
-            return boardSlots[index].classList.contains(player); //checks for player characters in relevant indeces/slots. 
+    const result = winningCombos.some(combo => { // Checks for winning combos on the game board.
+        const isWinningCombo = combo.every(index=> { //Checks if relevant indeces/slots for a pattern are occupied by the current player.
+            return boardSlots[index].classList.contains(player); // Checks for player characters in relevant indeces/slots. 
         });
-        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // log pattern check. Checks for win for current player.
-        return isWinningPattern; //Returns boolean value to confirm if a combo is found or not.
+        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // Log pattern check. Checks for win for current player.
+        return isWinningCombo; //Returns boolean value to confirm if a combo is found or not.
     })
     console.log(`${player} win status: ${result}`)
-    return result; //returns result of win check.
+    return result; //Returns result of win check.
 }
 
 /**
@@ -67,14 +67,12 @@ function displayWinMessage(player) {
 //Checks for lossResult
 
 /**
- * Checks for a draw result.
+ * Displays hidden draw message.
  */
 function displayDrawMessage() {
     const drawMessage = document.getElementById('draw-message');
 }
 
-//Show draw message
+//Next round (Board reset only. Tally is kept.)
 
-//Next round (board reset)
-
-//New game (tally & board reset)
+//New game (Tally & board reset.)
