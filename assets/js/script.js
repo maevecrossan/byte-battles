@@ -16,19 +16,54 @@ document.addEventListener("DOMContentLoaded" , function() {
                 // character to the chosen slot.
                 slot.classList.add(currentPlayer);
 
+                if (winResult(currentPlayer)){
+                    displayWinMessage(currentPlayer);
+                } else if (drawResult()) {
+                    displayDrawMessage();
+                } else {
+                    currentPlayer = currentPlayer === 'x' ? 'o' : 'x';
+                }
             }
         })
     } 
 
 })
 
-//Checks for winResult
+/**
+ * Checks for win one of the winning combinations.
+ */
+function winResult() {
+    // win combinations (sourced form stack overflow)
+    const winningCombos = [
+        [1, 2, 3],[4, 5, 6],[7, 8, 9], // rows
+        [1, 4, 7],[2, 5, 8],[3, 6, 9], // columns
+        [1, 5, 9],[3, 5, 7]            // diagonals
+    ];
+    
+    const result = winningCombos.some(combo => {
+        const isWinningCombo = combo.every(index=> {
+            return boardSlots[index].classList.contains(player);
+        });
+        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`);
+        return isWinningPattern; //stops function
+    }) // 
+}
 
-//Show winner message
+/**
+ * Displays hidden winner message.
+ */
+function displayWinMessage() {
+
+}
 
 //Checks for lossResult
 
-//Checks for drawResult
+/**
+ * Checks for a draw result.
+ */
+function displayDrawMessage() {
+
+}
 
 //Show draw message
 
