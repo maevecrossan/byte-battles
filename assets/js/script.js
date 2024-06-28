@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let playerO = 'o';
     let currentPlayer = playerX; // Sets X as initial player.
 
+
     // Add click event to each board slot
     for (const slot of boardSlots) {
         
@@ -22,11 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else if (drawResult()) {
                     displayDrawMessage(); // Display draw message if no combo is achieved or the board is full.
                 } else { // Player swap if neither win or draw
-                    if (currentPlayer === playerX) {
-                        currentPlayer = playerO;
-                    } else {
-                        currentPlayer = playerX;
-                    }
+                    currentPlayer === playerX ? playerX : playerO;
                     console.log(`Next player:${currentPlayer}`); // Player logging for debugging.
                 }
             }
@@ -46,8 +43,8 @@ function winResult(player) {
     ];
     
     const result = winningCombos.some(combo => { // Checks for winning combos on the game board.
-        const isWinningCombo = combo.every(index=> { //Checks if relevant indeces/slots for a pattern are occupied by the current player.
-            return boardSlots[index].classList.contains(player); // Checks for player characters in relevant indeces/slots. 
+        const isWinningCombo = combo.every(index=> { //Checks if relevant indices/slots for a pattern are occupied by the current player.
+            return boardSlots[index].classList.contains(player); // Checks for player characters in relevant indices/slots. 
         });
         console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // Log pattern check. Checks for win for current player.
         return isWinningCombo; //Returns boolean value to confirm if a combo is found or not.
@@ -55,6 +52,21 @@ function winResult(player) {
     console.log(`${player} win status: ${result}`)
     return result; //Returns result of win check.
 }
+
+/**
+ * Checks for a draw if no combo is found.
+ */
+function drawResult() {
+    const boardSlots = document.getElementsByClassName('board-slot');
+    // Check if all board slots are occupied. 
+    for (const slot of boardSlots) {
+        if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
+            return false; //If a slot is free, no draw.
+        }
+    }
+}
+
+
 
 /**
  * Displays hidden winner message.
