@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded" , function() {
 /**
  * Checks for win one of the winning combinations.
  */
-function winResult() {
-    // win combinations (sourced form stack overflow)
+function winResult(player) {
+    // Winning combinations (sourced form stack overflow)
     const winningCombos = [
         [1, 2, 3],[4, 5, 6],[7, 8, 9], // rows
         [1, 4, 7],[2, 5, 8],[3, 6, 9], // columns
         [1, 5, 9],[3, 5, 7]            // diagonals
     ];
     
-    const result = winningCombos.some(combo => {
-        const isWinningCombo = combo.every(index=> {
-            return boardSlots[index].classList.contains(player);
+    const result = winningCombos.some(combo => { // checks for winning combos on the game board.
+        const isWinningCombo = combo.every(index=> { //checks if relevant indeces/slots for a pattern are occupied by the current player.
+            return boardSlots[index].classList.contains(player); //checks for player characters in relevant indeces/slots. 
         });
-        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`);
-        return isWinningPattern; //stops function
+        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // log pattern check. Checks for win for current player.
+        return isWinningPattern; //stops function. Returns boolean value to confirm if a combo is found or not.
     }) // 
 }
 
