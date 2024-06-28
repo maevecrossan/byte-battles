@@ -4,10 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Selects all board slots (where X's and O's can be placed)
     const boardSlots = document.getElementsByClassName('board-slot');
     // Establishes first player when game loads
-    let playerX = 'x';
+    let playerX ='x';
     let playerO = 'o';
-    let currentPlayer = 'playerX'; // Sets X as initial player.
-
+    let currentPlayer = 'x'; // Sets X as initial player.
 
     // Add click event to each board slot
     for (const slot of boardSlots) {
@@ -17,14 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 // If unoccupied, add current player's character to the chosen slot.
                 slot.classList.add(currentPlayer);
 
+                // Check if win or draw conditions are met.
                 if (winResult(currentPlayer)){
-                    displayWinMessage(currentPlayer); // Display win message if combo was achieved.
+                    displayWinMessage(currentPlayer);
                 } else if (drawResult()) {
-                    displayDrawMessage(); // Display draw message if no combo is achieved or the board is full.
+                    displayDrawMessage();
                 } else { // Player swap if neither win or draw
                     currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
                     console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
                 }
+            } else {
+                console.log("slot already occupied.");
             }
         });
     } 
