@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /**
- * Checks for win one of the winning combinations.
+ * Checks for one of the winning combinations.
  */
 function winResult(player) {
     const boardSlots = document.getElementsByClassName('board-slot'); // Selects all board slots
@@ -57,7 +57,10 @@ function winResult(player) {
     return result; //Returns result of win check.
 }
 
-
+/** 
+ * Adds a point to the respective player tally.
+ * Runs in tandem with addLossPoint function.
+*/
 function addWinPoint(currentPlayer) {
     if (winResult = (currentPlayer)) {
         if (currentPlayer === 'x') {
@@ -68,6 +71,14 @@ function addWinPoint(currentPlayer) {
             document.getElementById('p-o-wins').innerHTML = ++oWins;
         }
     }
+}
+
+/**
+ * Displays hidden winner message.
+ */
+function displayWinMessage(player) {
+    const winMessage = document.getElementById('win-message');
+    winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`
 }
 
 /**
@@ -87,6 +98,9 @@ function drawResult() {
     return allOccupied;
 }
 
+/** 
+ * Adds a point to the both player tallys.
+*/
 function addDrawPoint(currentplayer) {
     if (drawResult = true) {
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
@@ -96,21 +110,18 @@ function addDrawPoint(currentplayer) {
         }
     }
 
-
-
 /**
- * Displays hidden winner message.
+ * Displays hidden draw message.
  */
-function displayWinMessage(player) {
-    const winMessage = document.getElementById('win-message');
-    winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`
+function displayDrawMessage() {
+    const drawMessage = document.getElementById('draw-message');
 }
 
-//Checks for lossResult
-function lossResult() {
-
-}
-
+/** 
+ * Adds a point to the respective player tally.
+ * Runs in tandem with addWinPoint function,
+ * so does not have lossResult function.
+*/
 function addLossPoint(currentPlayer) {
     if (winResult = (currentPlayer)) {
         if (currentPlayer === 'o') {
@@ -121,14 +132,6 @@ function addLossPoint(currentPlayer) {
             document.getElementById('p-o-losses').innerHTML = ++oLoss;
         }
     }
-}
-
-
-/**
- * Displays hidden draw message.
- */
-function displayDrawMessage() {
-    const drawMessage = document.getElementById('draw-message');
 }
 
 //Next round (Board reset only. Tally is kept.)
