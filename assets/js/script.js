@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded" , function() {
  * Checks for win one of the winning combinations.
  */
 function winResult(player) {
-    // Winning combinations (sourced form stack overflow)
+    // Winning combinations (based on article form stack overflow)
     const winningCombos = [
-        [1, 2, 3],[4, 5, 6],[7, 8, 9], // rows
-        [1, 4, 7],[2, 5, 8],[3, 6, 9], // columns
-        [1, 5, 9],[3, 5, 7]            // diagonals
+        [0, 1, 2],[3, 4, 5],[6, 7, 8], // rows
+        [0, 3, 6],[1, 4, 7],[2, 5, 8], // columns
+        [0, 4, 8],[2, 4, 6]            // diagonals
     ];
     
     const result = winningCombos.some(combo => { // checks for winning combos on the game board.
