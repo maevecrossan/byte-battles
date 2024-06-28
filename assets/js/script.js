@@ -6,12 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Establishes first player when game loads
     let playerX = 'x';
     let playerO = 'o';
-    let currentPlayer = playerX; // Sets X as initial player.
+    let currentPlayer = 'playerX'; // Sets X as initial player.
 
 
     // Add click event to each board slot
     for (const slot of boardSlots) {
-        
         // Checks if the box is occupied by an 'x' or 'o'
         slot.addEventListener('click', function occupiedCheck() {
             if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
@@ -23,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else if (drawResult()) {
                     displayDrawMessage(); // Display draw message if no combo is achieved or the board is full.
                 } else { // Player swap if neither win or draw
-                    currentPlayer === playerX ? playerX : playerO;
-                    console.log(`Next player:${currentPlayer}`); // Player logging for debugging.
+                    currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
+                    console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
                 }
             }
         });
@@ -57,6 +56,9 @@ function winResult(player) {
  * Checks for a draw if no combo is found.
  */
 function drawResult() {
+    let playerX = 'x';
+    let playerO = 'o';
+    let currentPlayer = 'playerX';
     const boardSlots = document.getElementsByClassName('board-slot');
     // Check if all board slots are occupied. 
     for (const slot of boardSlots) {
