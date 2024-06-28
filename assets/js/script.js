@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Check if win or draw conditions are met.
                 if (winResult(currentPlayer)){
+                    addWinPoint(currentPlayer); 
                     displayWinMessage(currentPlayer);
                 } else if (drawResult()) {
                     displayDrawMessage();
@@ -50,8 +51,21 @@ function winResult(player) {
         console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // Log pattern check. Checks for win for current player.
         return isWinningCombo; //Returns boolean value to confirm if a combo is found or not.
     })
-    console.log(`${player} win status: ${result}`)
+    console.log(`${player} win status: ${result}`);
     return result; //Returns result of win check.
+}
+
+
+function addWinPoint(currentPlayer) {
+    if (winResult = (currentPlayer)) {
+        if (currentPlayer === 'x') {
+            let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
+            document.getElementById('p-x-wins').innerHTML = ++xWins;
+        } else if (currentPlayer === 'o') {
+            let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
+            document.getElementById('p-o-wins').innerHTML = ++oWins;
+        }
+    }
 }
 
 /**
@@ -70,6 +84,17 @@ function drawResult() {
     }
 }
 
+function addDrawPoint() {
+    if (winResult = (!currentPlayer)) {
+        if (currentPlayer === !'x') {
+            let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
+            document.getElementById('p-x-draws').innerHTML = ++xDraws;
+        } else if (currentPlayer === 'o') {
+            let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
+            document.getElementById('p-o-draws').innerHTML = ++odraws;
+        }
+    }
+}
 
 
 /**
@@ -81,6 +106,14 @@ function displayWinMessage(player) {
 }
 
 //Checks for lossResult
+function lossResult() {
+
+}
+
+function addLossPoint() {
+
+}
+
 
 /**
  * Displays hidden draw message.
