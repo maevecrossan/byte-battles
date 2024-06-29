@@ -72,17 +72,17 @@
             </div>
 
             <!-- Hidden Win Message -->
-            <div class="win-message display" id="win-message">
+            <div class="win-message-hidden display" id="win-message">
                 <div data-win-message>
-                    <h3 class="text-shadow"> Wins! </h3> 
+                    <h3 class="text-shadow h3-heading"> Wins! </h3> 
                 </div>
                 <button id="new-game"> New Game </button>
             </div>
 
             <!-- Hidden Draw Message -->
-            <div class="draw-message display" id="draw-message">
+            <div class="draw-message-hidden display " id="draw-message">
                 <div data-draw-message>
-                    <h3 class="text-shadow"> Draw! </h3> 
+                    <h3 class="text-shadow h3-heading"> Draw! </h3> 
                 </div>
                 <button id="new-game"> New Game </button>
             </div>
@@ -98,6 +98,16 @@
                     <button class="pink-button" id="new-game"> New Game </button>
                 </div>
 
+            </div>
+
+            <!-- Hidden Warning/Confirm New Game Message -->
+            <div class="warning-message-hidden display" id="warning-message">
+                <div data-warning-message>
+                    <h3 class="text-shadow h3-heading"> Are you sure you want to start a new game? </h3> 
+                    <p class="warning-text">All progress will be lost.</p>
+                </div>
+                <button id="comfirm-button"> Yes </button>
+                <button id="comfirm-button"> No </button>
             </div>
 
         </main>

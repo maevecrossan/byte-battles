@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-/* -------- General Styles */
+/* General Styles */
 
 body {
     background-color: rgb(31, 0, 75);
@@ -19,7 +19,7 @@ body {
     margin-top: 30px;
 }
 
-/* -------- Header / Game Title Styles */
+/* Header / Game Title Styles */
 header {
     padding: 5px;
 }
@@ -35,6 +35,30 @@ h2 {
 
 h3 {
     font-size: 30px;
+    padding: 40px;
+    max-width: 615px;
+}
+
+/* Hidden Messages */
+.win-message-hidden, 
+.draw-message-hidden,
+.warning-message-hidden {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(31, 0, 75, 0.93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning-text {
+    padding: 20px 20px 40px 20px;
+    font-size: 20px;
 }
 
 .text-shadow {
@@ -43,7 +67,7 @@ h3 {
                 0 0 15px rgba(233, 250, 249, 0.552);
 }
 
-/* -------- Game Board Styles */
+/* Game Board Styles */
 #board {
     margin: 40px 0 10px 0;
     text-align: center;
@@ -69,7 +93,7 @@ h3 {
     font-size: 80px;
 }
 
-/* Removes outer-most border */
+/* -------- Removes outer-most border */
 .board-slot:first-child,
 .board-slot:nth-child(2),
 .board-slot:nth-child(3) {
@@ -90,9 +114,9 @@ h3 {
     border-bottom: none;
 }
 
-/* Individual Slots */
-/* Credits: X and O from Web Dev Simplified */
-/* Creates X & hover*/
+/* -------- Individual Slots */
+/* -------- Credits: X and O from Web Dev Simplified */
+/* -------- Creates X & hover*/
 
 .board-slot.x::before,
 .board-slot.x::after {
@@ -124,7 +148,7 @@ h3 {
     transform: rotate(-45deg);
 }
 
-/* Creates O */
+/* -------- Creates O */
 
 .board-slot.o::before,
 .board-slot.o::after {
@@ -144,14 +168,14 @@ h3 {
     position: absolute;
 }
 
-/* O Outer Circle */
+/* -------- O Outer Circle */
 .board-slot.o::before, 
 .board-slot:not(.x):not(.o):hover::before {
     width: 90%;
     height: 90%;
 }
 
-/* O Inner Circle */
+/* -------- O Inner Circle */
 .board-slot.o::after, 
 .board-slot:not(.x):not(.o):hover::after {
     width: 65%; 
@@ -159,7 +183,7 @@ h3 {
     background-color: rgb(31, 0, 75);
 }
 
-/* -------- Tally Container Styles */
+/* Tally Container Styles */
 #tally-container {
     margin: 40px 0 30px 0;
 }
@@ -174,32 +198,6 @@ h3 {
     font-size: 25px;
     font-weight: 450;
     padding: 10px 0 10px 0;
-}
-
-/* Winner Message */
-.win-message, 
-.draw-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(31, 0, 75, 0.93);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.win-message h3,
-.draw-message h3 {
-    margin: 30px;
-    font-size: 50px;
-}
-
-.win-message .display,
-.draw-message .display {
-    display: flex;
 }
 
 /* New game & Next Round buttons */
