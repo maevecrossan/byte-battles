@@ -99,6 +99,15 @@ function drawResult() {
     return allOccupied;
 }
 
+/**
+ * Displays hidden draw message.
+ */
+function displayDrawMessage() {
+    const drawMessage = document.getElementById('draw-message');
+    drawMessage.querySelector('[data-draw-message] h3').textContent = `Draw!`;
+    drawMessage.classList.remove('display');
+}
+
 /** 
  * Adds a point to the both player tallys.
 */
@@ -111,12 +120,6 @@ function addDrawPoint(currentplayer) {
         }
     }
 
-/**
- * Displays hidden draw message.
- */
-function displayDrawMessage() {
-    const drawMessage = document.getElementById('draw-message');
-}
 
 /** 
  * Adds a point to the respective player tally.
