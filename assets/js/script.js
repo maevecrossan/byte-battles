@@ -57,6 +57,15 @@ function winResult(player) {
     return result; //Returns result of win check.
 }
 
+/**
+ * Displays hidden winner message.
+ */
+function displayWinMessage(player) {
+    const winMessage = document.getElementById('win-message');
+    winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`;
+    winMessage.classList.remove('display');
+}
+
 /** 
  * Adds a point to the respective player tally.
  * Runs in tandem with addLossPoint function.
@@ -71,14 +80,6 @@ function addWinPoint(currentPlayer) {
             document.getElementById('p-o-wins').innerHTML = ++oWins;
         }
     }
-}
-
-/**
- * Displays hidden winner message.
- */
-function displayWinMessage(player) {
-    const winMessage = document.getElementById('win-message');
-    winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`
 }
 
 /**
