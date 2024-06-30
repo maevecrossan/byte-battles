@@ -138,6 +138,11 @@ function addLossPoint(currentPlayer) {
 }
 
 //Next round (Board reset only. Tally is kept.)
-
+function nextRound () {
+    
+}
 
 //New game (Tally & board reset.)
+function newGame() {
+
+}
