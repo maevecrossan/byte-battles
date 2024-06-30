@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } 
     nextRound(); // Triggers the next round once button is clicked.
+    newGame(); // Triggers the warning dialogue box.
+    resetNo();
+    resetYes();
 });
 
 
@@ -90,15 +93,6 @@ function drawResult() {
     return occupied;
 }
 
-/**
- * Displays hidden draw message.
- */
-function displayDrawMessage() {
-    const drawMessage = document.getElementById('draw-message');
-    drawMessage.querySelector('[data-draw-message] h3').textContent = `Draw!`;
-    drawMessage.classList.remove('hidden');
-}
-
 /** 
  * Adds a point to the both player tallys.
 */
@@ -112,6 +106,14 @@ function addDrawPoint() {
         }
     }
 
+/**
+ * Displays hidden draw message.
+ */
+function displayDrawMessage() {
+    const drawMessage = document.getElementById('draw-message');
+    drawMessage.querySelector('[data-draw-message] h3').textContent = `Draw!`;
+    drawMessage.classList.remove('hidden');
+}
 
 /** 
  * Adds a point to the respective player tally.
@@ -158,14 +160,52 @@ function nextRound() {
     }
 }
 
-function resetYes () {
-
+function newGame() {
+    const newGameButton = document.getElementById('new-game-button');
+    newGameButton.addEventListener('click', function() {
+        console.log('New Game button clicked. Displaying warning message.');
+        const warningMessage = document.getElementById('warning-message');
+        warningMessage.classList.remove('hidden');
+    });
 }
 
 function resetNo () {
+    let noButton = document.getElementById('no-button');
+    noButton.addEventListener('click', function(){
+        console.log('Player confirmed "no".');
 
+        const warningMessage = document.getElementById('warning-message');
+        warningMessage.classList.add('hidden');
+    });
 }
 
-function newGame() {
-    let newGameButton = document.getElementById('')
+function resetYes () {
+    let yesButton = document.getElementById('yes-button');
+    yesButton.addEventListener('click', function(){
+        console.log('Player confirmed "yes". Resetting board and tally...');
+
+        const boardSlots = document.getElementsByClassName('board-slot');
+        for (const slot of boardSlots) {
+            slot.classList.remove('x', 'o');
+            console.log('Board has successfully reset.');
+            // Reset Win Scores
+            let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
+            document.getElementById('p-x-wins').innerHTML = 0;
+            let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
+            document.getElementById('p-o-wins').innerHTML = 0;
+            //Reset Loss Scores
+            let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
+            document.getElementById('p-x-losses').innerHTML = 0;
+            let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
+            document.getElementById('p-o-losses').innerHTML = 0;
+            // Reset Draw Scores
+            let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
+            document.getElementById('p-x-draws').innerHTML = 0;
+            let oDraws = parseInt(document.getElementById('p-o-wins').innerHTML);
+            document.getElementById('p-o-draws').innerHTML = 0;
+        }
+        const warningMessage = document.getElementById('warning-message');
+        warningMessage.classList.add('hidden');
+        console.log('Game reset successful.')
+    });
 }
