@@ -33,7 +33,35 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     } 
+    nextRound(); // Triggers the next round once button is clicked.
 });
+
+/**
+ * Triggers next round. 
+ * Board reset only. 
+ * Tally is kept.
+ * Hides message.
+ */
+function nextRound() {
+    let nextRoundButtons = document.getElementsByClassName('next-round-button');
+    
+    for (const button of nextRoundButtons){
+    
+        button.addEventListener('click', function() {
+            console.log('A new round has been started. Emptying slots...')
+            const boardSlots = document.getElementsByClassName('board-slot');
+            for (const slot of boardSlots) {
+                slot.classList.remove('x', 'o');
+            }
+            
+            const winMessage = document.getElementById('win-message');
+            const drawMessage = document.getElementById('draw-message');
+            
+            winMessage.classList.add('hidden');
+            drawMessage.classList.add('hidden');
+        });
+    }
+}
 
 /**
  * Checks for one of the winning combinations.
@@ -63,7 +91,7 @@ function winResult(player) {
 function displayWinMessage(player) {
     const winMessage = document.getElementById('win-message');
     winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`;
-    winMessage.classList.remove('display');
+    winMessage.classList.remove('hidden');
 }
 
 /** 
@@ -104,7 +132,7 @@ function drawResult() {
 function displayDrawMessage() {
     const drawMessage = document.getElementById('draw-message');
     drawMessage.querySelector('[data-draw-message] h3').textContent = `Draw!`;
-    drawMessage.classList.remove('display');
+    drawMessage.classList.remove('hidden');
 }
 
 /** 
@@ -135,11 +163,6 @@ function addLossPoint(currentPlayer) {
             document.getElementById('p-o-losses').innerHTML = ++oLoss;
         }
     }
-}
-
-//Next round (Board reset only. Tally is kept.)
-function nextRound () {
-    
 }
 
 //New game (Tally & board reset.)
