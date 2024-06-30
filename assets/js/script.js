@@ -1,5 +1,4 @@
 // Waits for the DOM to load before initailising game.
-
 document.addEventListener("DOMContentLoaded", function() {
     // Selects all board slots (where X's and O's can be placed)
     const boardSlots = document.getElementsByClassName('board-slot');
@@ -85,17 +84,10 @@ function displayWinMessage(player) {
  * Checks for a draw if no combo is found.
  */
 function drawResult() {
-    let playerX = 'x';
-    let playerO = 'o';
-    let currentPlayer = 'playerX';
     const boardSlots = document.getElementsByClassName('board-slot');
-    const allOccupied = [...boardSlots].every(slot => {
-        const occupied = slot.classList.contains('x') || slot.classList.contains('o');
-        console.log(`Slot occupied status: ${occupied}`);
-        return occupied;
-    })
-    console.log(`Draw Result: ${allOccupied}`);
-    return allOccupied;
+    const occupied = [...boardSlots].every(slot => slot.classList.contains('x') || slot.classList.contains('o'));
+    console.log(`Draw Result: ${occupied}`);
+    return occupied;
 }
 
 /**
@@ -110,10 +102,11 @@ function displayDrawMessage() {
 /** 
  * Adds a point to the both player tallys.
 */
-function addDrawPoint(currentplayer) {
+function addDrawPoint() {
     if (drawResult = true) {
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
             document.getElementById('p-x-draws').innerHTML = ++xDraws;
+
             let oDraws = parseInt(document.getElementById('p-o-wins').innerHTML);
             document.getElementById('p-o-draws').innerHTML = ++oDraws;
         }
@@ -126,14 +119,13 @@ function addDrawPoint(currentplayer) {
  * so does not have lossResult function.
 */
 function addLossPoint(currentPlayer) {
-    if (winResult = (currentPlayer)) {
-        if (currentPlayer === 'o') {
-            let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
-            document.getElementById('p-x-losses').innerHTML = ++xLoss;
-        } else if (currentPlayer === 'x') {
-            let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
-            document.getElementById('p-o-losses').innerHTML = ++oLoss;
-        }
+    if (currentPlayer === 'o') {
+        let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
+        document.getElementById('p-x-losses').innerHTML = ++xLoss;
+
+    } else if (currentPlayer === 'x') {
+        let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
+        document.getElementById('p-o-losses').innerHTML = ++oLoss;
     }
 }
 
@@ -146,7 +138,7 @@ function addLossPoint(currentPlayer) {
 function nextRound() {
     let nextRoundButtons = document.getElementsByClassName('next-round-button');
     
-    for (const button of nextRoundButtons){
+    for (const button of nextRoundButtons) {
     
         button.addEventListener('click', function() {
             console.log('A new round has been started. Emptying slots...')
@@ -160,11 +152,8 @@ function nextRound() {
             
             winMessage.classList.add('hidden');
             drawMessage.classList.add('hidden');
+
+            currentPlayer = 'x';
         });
     }
-}
-
-//New game (Tally & board reset.)
-function newGame() {
-
 }
