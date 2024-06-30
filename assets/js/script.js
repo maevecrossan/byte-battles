@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click event to each board slot
     for (const slot of boardSlots) {
-        // Checks if the box is occupied by an 'x' or 'o'
+        /**
+         * Determines slot occupancy and determines next function.
+         */
         slot.addEventListener('click', function occupiedCheck() {
             if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
                 // If unoccupied, add current player's character to the chosen slot.
@@ -36,32 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
     nextRound(); // Triggers the next round once button is clicked.
 });
 
-/**
- * Triggers next round. 
- * Board reset only. 
- * Tally is kept.
- * Hides message.
- */
-function nextRound() {
-    let nextRoundButtons = document.getElementsByClassName('next-round-button');
-    
-    for (const button of nextRoundButtons){
-    
-        button.addEventListener('click', function() {
-            console.log('A new round has been started. Emptying slots...')
-            const boardSlots = document.getElementsByClassName('board-slot');
-            for (const slot of boardSlots) {
-                slot.classList.remove('x', 'o');
-            }
-            
-            const winMessage = document.getElementById('win-message');
-            const drawMessage = document.getElementById('draw-message');
-            
-            winMessage.classList.add('hidden');
-            drawMessage.classList.add('hidden');
-        });
-    }
-}
 
 /**
  * Checks for one of the winning combinations.
@@ -75,14 +51,25 @@ function winResult(player) {
     ];
     
     const result = winningCombos.some(combo => { // Checks for winning combos on the game board.
-        const isWinningCombo = combo.every(index=> { //Checks if relevant indices/slots for a pattern are occupied by the current player.
-            return boardSlots[index].classList.contains(player); // Checks for player characters in relevant indices/slots. 
+        return combo.every(index=> boardSlots[index].classList.contains(player)) // Checks for player characters in relevant indices/slots. 
         });
-        console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // Log pattern check. Checks for win for current player.
-        return isWinningCombo; //Returns boolean value to confirm if a combo is found or not.
-    });
     console.log(`${player} win status: ${result}`);
     return result; //Returns result of win check.
+}
+
+/** 
+ * Adds a point to the respective player tally.
+ * Runs in tandem with addLossPoint function.
+*/
+function addWinPoint(currentPlayer) {
+    if (currentPlayer === 'x') {
+        let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
+        document.getElementById('p-x-wins').innerHTML = ++xWins;
+    } else if (currentPlayer === 'o') {
+        let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
+        document.getElementById('p-o-wins').innerHTML = ++oWins;
+    }
+    displayWinMessage(currentPlayer); //Calls winMessage function.
 }
 
 /**
@@ -93,21 +80,6 @@ function displayWinMessage(player) {
     winMessage.querySelector('[data-win-message] h3').textContent = `${player} Wins!`;
     winMessage.classList.remove('hidden');
 }
-
-/** 
- * Adds a point to the respective player tally.
- * Runs in tandem with addLossPoint function.
-*/
-function addWinPoint(currentPlayer) {
-        if (currentPlayer === 'x') {
-            let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
-            document.getElementById('p-x-wins').innerHTML = ++xWins;
-        } else if (currentPlayer === 'o') {
-            let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
-            document.getElementById('p-o-wins').innerHTML = ++oWins;
-        }
-        displayWinMessage(currentPlayer); //Calls winMessage function.
-    }
 
 /**
  * Checks for a draw if no combo is found.
@@ -162,6 +134,33 @@ function addLossPoint(currentPlayer) {
             let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
             document.getElementById('p-o-losses').innerHTML = ++oLoss;
         }
+    }
+}
+
+/**
+ * Triggers next round. 
+ * Board reset only. 
+ * Tally is kept.
+ * Hides message.
+ */
+function nextRound() {
+    let nextRoundButtons = document.getElementsByClassName('next-round-button');
+    
+    for (const button of nextRoundButtons){
+    
+        button.addEventListener('click', function() {
+            console.log('A new round has been started. Emptying slots...')
+            const boardSlots = document.getElementsByClassName('board-slot');
+            for (const slot of boardSlots) {
+                slot.classList.remove('x', 'o');
+            }
+            
+            const winMessage = document.getElementById('win-message');
+            const drawMessage = document.getElementById('draw-message');
+            
+            winMessage.classList.add('hidden');
+            drawMessage.classList.add('hidden');
+        });
     }
 }
 
