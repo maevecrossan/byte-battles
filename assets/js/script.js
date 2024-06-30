@@ -157,3 +157,15 @@ function nextRound() {
         });
     }
 }
+
+function resetYes () {
+
+}
+
+function resetNo () {
+
+}
+
+function newGame() {
+    let newGameButton = document.getElementById('')
+}
