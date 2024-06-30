@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Check if win or draw conditions are met.
                 if (winResult(currentPlayer)){
                     addWinPoint(currentPlayer); 
-                    addLossPoint(currentPlayer)
+                    addLossPoint(currentPlayer);
                     displayWinMessage(currentPlayer);
                 } else if (drawResult()) {
                     addDrawPoint();
@@ -52,7 +52,7 @@ function winResult(player) {
         });
         console.log(`Checking combination ${combo} for ${player}: ${isWinningCombo}`); // Log pattern check. Checks for win for current player.
         return isWinningCombo; //Returns boolean value to confirm if a combo is found or not.
-    })
+    });
     console.log(`${player} win status: ${result}`);
     return result; //Returns result of win check.
 }
@@ -71,7 +71,6 @@ function displayWinMessage(player) {
  * Runs in tandem with addLossPoint function.
 */
 function addWinPoint(currentPlayer) {
-    if (winResult = (currentPlayer)) {
         if (currentPlayer === 'x') {
             let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
             document.getElementById('p-x-wins').innerHTML = ++xWins;
@@ -79,8 +78,8 @@ function addWinPoint(currentPlayer) {
             let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
             document.getElementById('p-o-wins').innerHTML = ++oWins;
         }
+        displayWinMessage(currentPlayer); //Calls winMessage function.
     }
-}
 
 /**
  * Checks for a draw if no combo is found.
@@ -139,5 +138,6 @@ function addLossPoint(currentPlayer) {
 }
 
 //Next round (Board reset only. Tally is kept.)
+
 
 //New game (Tally & board reset.)
