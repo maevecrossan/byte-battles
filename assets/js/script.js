@@ -201,7 +201,7 @@ function resetYes () {
             // Reset Draw Scores
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
             document.getElementById('p-x-draws').innerHTML = 0;
-            let oDraws = parseInt(document.getElementById('p-o-wins').innerHTML);
+            let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
             document.getElementById('p-o-draws').innerHTML = 0;
         }
         const warningMessage = document.getElementById('warning-message');
