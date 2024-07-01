@@ -16,8 +16,8 @@
         </header>
 
     <!-- Game Area -->
-        <main> 
-            <!-- Game Board -->
+        <main>
+            <!-- Game Board-->
             <div class="board" id="board">
                 <div class="board-slot slot-1" data-slot> </div>
                 <div class="board-slot slot-2" data-slot> </div>
@@ -31,44 +31,53 @@
             </div>
 
             <!-- Tally Container -->
-            <div class="direction-row" id="tally-container">
+            <div id="tally-container">
 
-                <div id="p-x-tally">
+                <div class="player-tally" id="p-x-tally">
 
                     <h3 class="text-shadow player">Player X</h3>
+                        
+                    <div class="tally-counters">
+                        <p class="tally"> Wins: 
+                            <span id="p-x-wins">0</span>
+                        </p>
 
-                    <p class="tally"> Wins: 
-                        <span id="p-x-wins">0</span>
-                    </p>
+                        <p class="tally"> Losses: 
+                            <span id="p-x-losses">0</span>
+                        </p>
 
-                    <p class="tally"> Losses: 
-                        <span id="p-x-losses">0</span>
-                    </p>
-
-                    <p class="tally"> Draws: 
-                        <span id="p-x-draws">0</span>
-                    </p>
+                        <p class="tally"> Draws: 
+                            <span id="p-x-draws">0</span>
+                        </p>
+                    </div>
 
                 </div>
 
-                <div id="p-o-tally">
+                <div class="player-tally" id="p-o-tally">
 
                     <h3 class="text-shadow player">Player O</h3>
+                    
+                    <div class="tally-counters">
+                        <p class="tally"> Wins: 
+                            <span id="p-o-wins">0</span>
+                        </p>
 
-                    <p class="tally"> Wins: 
-                        <span id="p-o-wins">0</span>
-                    </p>
+                        <p class="tally"> Losses: 
+                            <span id="p-o-losses">0</span>
+                        </p>
 
-                    <p class="tally"> Losses: 
-                        <span id="p-o-losses">0</span>
-                    </p>
-
-                    <p class="tally"> Draws: 
-                        <span id="p-o-draws">0</span>
-                    </p>
+                        <p class="tally"> Draws: 
+                            <span id="p-o-draws">0</span>
+                        </p>
+                    </div>
 
                 </div>
 
+            </div>
+
+            <!-- New Game Button -->
+            <div id="new-game">
+                <button class="pink-button" id="new-game-button"> New Game </button>
             </div>
 
             <!-- Hidden Win Message -->
@@ -87,11 +96,6 @@
                 <button class="pink-button next-round-button" id="draw-next-round"> Next Round </button>
             </div>
 
-            <!-- New Game Button -->
-                <div id="new-game">
-                    <button class="pink-button" id="new-game-button"> New Game </button>
-                </div>
-
             <!-- Hidden Warning/Confirm New Game Message -->
             <div class="hidden-message hidden" id="warning-message">
                 <div data-warning-message>
@@ -101,7 +105,7 @@
                 <button class="pink-button warning-button" id="yes-button"> Yes </button>
                 <button class="pink-button warning-button" id="no-button"> No </button>
             </div>
-
+        
         </main>
 
     <script src="assets/js/script.js"></script>

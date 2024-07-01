@@ -103,7 +103,7 @@ h3 {
 
 .board.X .board-slot:not(.X):not(.O):hover::before,
 .board.X .board-slot:not(.X):not(.O):hover::after {
-    background-color: rgb(225, 255, 141, 0.95);
+    background-color: rgba(225, 255, 141, 0.95);
 }
 
 .board-slot.X::before,
@@ -130,7 +130,7 @@ h3 {
 
 .board-slot.O::before,
 .board-slot.O::after {
-    background-color: rgb(255, 0, 251);;
+    background-color: rgb(255, 0, 251);
 }
 
 .board.O .board-slot:not(.X):not(.O):hover::before {
@@ -161,13 +161,31 @@ h3 {
     background-color: rgb(31, 0, 75);
 }
 
-/* Tally Container Styles */
+/* Tally Styles */
 #tally-container {
-    margin: 40px 0 30px 0;
+    margin: 40px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-tally{
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+#p-x-tally {
+    border: 2px solid rgba(225, 255, 141, 0.95);
+    box-shadow: rgba(225, 255, 141, 0.95) 0 0 10px 1px;
+
 }
 
 #p-o-tally {
-    margin-top: 30px;
+    border: 2px solid rgba(250, 189, 249, 0.95);
+
+    box-shadow: rgba(250, 189, 249, 0.95) 0 0 10px 1px;
 }
 
 .tally {
@@ -235,12 +253,9 @@ button:hover {
         align-items: center;
         align-content: center;
     }
-    
-    .direction-row {
-        display: flex;
+
+    #tally-container {
         flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;
     }
     
     .tally {
@@ -252,7 +267,7 @@ button:hover {
     }
 
     #new-game {
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     .player {
@@ -264,7 +279,46 @@ button:hover {
     }
 }
     
-@media screen and (min-width: 768px) {
-/* Moves player X to the left of the board. */
-/* Moves player O to the right of the board. */
+@media screen and (min-width: 1024px) {
+    #tally-container {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .player-tally {
+        width: 400px;
+    }
+
+    #new-game-button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #tally-container {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .player-tally {
+        width: 600px;
+    }
+
+    .tally-counters .tally{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 55px;
+    }
+
+    .tally {
+        margin: 20px;
+        padding: 0px;
+    }
+
+    #new-game-button {
+        margin-top: 10px;
+    }
 }
