@@ -101,10 +101,10 @@ function addDrawPoint() {
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
             document.getElementById('p-x-draws').innerHTML = ++xDraws;
 
-            let oDraws = parseInt(document.getElementById('p-o-wins').innerHTML);
+            let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
             document.getElementById('p-o-draws').innerHTML = ++oDraws;
-        }
     }
+}
 
 /**
  * Displays hidden draw message.
