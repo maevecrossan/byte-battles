@@ -97,7 +97,7 @@ function drawResult() {
  * Adds a point to the both player tallys.
 */
 function addDrawPoint() {
-    if (drawResult = true) {
+    if (drawResult() === true) {
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
             document.getElementById('p-x-draws').innerHTML = ++xDraws;
 
@@ -121,7 +121,7 @@ function displayDrawMessage() {
  * so does not have lossResult function.
 */
 function addLossPoint(currentPlayer) {
-    if (currentPlayer === '(O)') {
+    if (currentPlayer === 'O') {
         let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
         document.getElementById('p-x-losses').innerHTML = ++xLoss;
 
