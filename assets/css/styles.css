@@ -46,7 +46,7 @@ h3 {
 }
 
 /* Game Board Styles */
-#board {
+#game-board {
     margin: 40px 0 10px 0;
     text-align: center;
     display: grid;
@@ -92,37 +92,24 @@ h3 {
     border-bottom: none;
 }
 
-/* -------- Individual Slots */
+/* Characters (X's and O's) */
 /* -------- Credits: X and O from Web Dev Simplified */
-/* -------- Creates X & hover*/
 
+/* -------- Creates X */
 .board-slot.X::before,
 .board-slot.X::after {
     background-color: rgb(187, 255, 0);
-}
-
-.board.X .board-slot:not(.X):not(.O):hover::before,
-.board.X .board-slot:not(.X):not(.O):hover::after {
-    background-color: rgba(225, 255, 141, 0.95);
-}
-
-.board-slot.X::before,
-.board-slot.X::after, 
-.board.X .board-slot:not(.X):not(.O):hover::before,
-.board.X .board-slot:not(.X):not(.O):hover::after {
     content: ''; /*empty string*/
     position: absolute;
     width: 15%;
     height: 90%;
 }
 
-.board-slot.X::before, 
-.board.X .board-slot:not(.X):not(.X):hover::before {
+.board-slot.X::before {
     transform: rotate(45deg);
 }
 
-.board-slot.X::after, 
-.board.X .board-slot:not(.X):not(.O):hover::after {
+.board-slot.X::after {
     transform: rotate(-45deg);
 }
 
@@ -131,31 +118,19 @@ h3 {
 .board-slot.O::before,
 .board-slot.O::after {
     background-color: rgb(255, 0, 251);
-}
-
-.board.O .board-slot:not(.X):not(.O):hover::before {
-    background-color: rgba(250, 189, 249, 0.95);
-}
-
-.board-slot.O::before,
-.board-slot.O::after, 
-.board.O .board-slot:not(.X):not(.O):hover::before,
-.board.O .board-slot:not(.X):not(.O):hover::after {
     content: ''; /*empty string*/
     border-radius: 50%;
     position: absolute;
 }
 
 /* -------- O Outer Circle */
-.board-slot.O::before, 
-.board-slot:not(.X):not(.O):hover::before {
+.board-slot.O::before {
     width: 90%;
     height: 90%;
 }
 
 /* -------- O Inner Circle */
-.board-slot.O::after, 
-.board-slot:not(.X):not(.O):hover::after {
+.board-slot.O::after {
     width: 65%; 
     height: 65%;
     background-color: rgb(31, 0, 75);
@@ -266,16 +241,12 @@ button:hover {
         padding: 10px 60px 10px 60px;
     }
 
-    #new-game {
-        margin-top: 10px;
-    }
-
     .player {
         padding: 20px;
     }
 
     .pink-button {
-        margin: 40px 45px 60px 50px;
+        margin: 10px 45px 40px 50px;
     }
 }
     
@@ -288,18 +259,9 @@ button:hover {
     .player-tally {
         width: 400px;
     }
-
-    #new-game-button {
-        margin-top: 10px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
-    #tally-container {
-        display: inline-flex;
-        flex-direction: row;
-    }
-
     .player-tally {
         width: 600px;
     }

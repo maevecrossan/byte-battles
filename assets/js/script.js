@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Selects all board slots (where X's and O's can be placed)
     const boardSlots = document.getElementsByClassName('board-slot');
+    const board = document.getElementById('game-board');
     // Establishes first player when game loads
     let playerX ='X';
     let playerO = 'O';
@@ -27,17 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
                     displayDrawMessage();
                 } else { // Player swap if neither win or draw
                     currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
+                    board.classList.toggle(playerX);
+                    board.classList.toggle(playerO);
                     console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
                 }
             } else {
                 console.log("slot already occupied.");
             }
         });
-    } 
     nextRound(); // Triggers the next round once button is clicked.
     newGame(); // Triggers the warning dialogue box.
-    resetNo();
-    resetYes();
+    resetNo(); // Returns to previous game board.
+    resetYes(); // Confirms reset.
+    }
 });
 
 
