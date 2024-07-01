@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Selects all board slots (where X's and O's can be placed)
     const boardSlots = document.getElementsByClassName('board-slot');
     // Establishes first player when game loads
-    let playerX ='x';
-    let playerO = 'o';
-    let currentPlayer = 'x'; // Sets X as initial player.
+    let playerX ='X';
+    let playerO = 'O';
+    let currentPlayer = 'X'; // Sets X as initial player.
 
     // Add click event to each board slot
     for (const slot of boardSlots) {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
          * Determines slot occupancy and determines next function.
          */
         slot.addEventListener('click', function occupiedCheck() {
-            if (!slot.classList.contains('x') && !slot.classList.contains('o')) {
+            if (!slot.classList.contains('X') && !slot.classList.contains('O')) {
                 // If unoccupied, add current player's character to the chosen slot.
                 slot.classList.add(currentPlayer);
 
@@ -64,10 +64,10 @@ function winResult(player) {
  * Runs in tandem with addLossPoint function.
 */
 function addWinPoint(currentPlayer) {
-    if (currentPlayer === 'x') {
+    if (currentPlayer === 'X') {
         let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
         document.getElementById('p-x-wins').innerHTML = ++xWins;
-    } else if (currentPlayer === 'o') {
+    } else if (currentPlayer === 'O') {
         let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
         document.getElementById('p-o-wins').innerHTML = ++oWins;
     }
@@ -88,7 +88,7 @@ function displayWinMessage(player) {
  */
 function drawResult() {
     const boardSlots = document.getElementsByClassName('board-slot');
-    const occupied = [...boardSlots].every(slot => slot.classList.contains('x') || slot.classList.contains('o'));
+    const occupied = [...boardSlots].every(slot => slot.classList.contains('X') || slot.classList.contains('O'));
     console.log(`Draw Result: ${occupied}`);
     return occupied;
 }
@@ -121,11 +121,11 @@ function displayDrawMessage() {
  * so does not have lossResult function.
 */
 function addLossPoint(currentPlayer) {
-    if (currentPlayer === 'o') {
+    if (currentPlayer === '(O)') {
         let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
         document.getElementById('p-x-losses').innerHTML = ++xLoss;
 
-    } else if (currentPlayer === 'x') {
+    } else if (currentPlayer === 'X') {
         let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
         document.getElementById('p-o-losses').innerHTML = ++oLoss;
     }
@@ -146,7 +146,7 @@ function nextRound() {
             console.log('A new round has been started. Emptying slots...')
             const boardSlots = document.getElementsByClassName('board-slot');
             for (const slot of boardSlots) {
-                slot.classList.remove('x', 'o');
+                slot.classList.remove('X', 'O');
             }
             
             const winMessage = document.getElementById('win-message');
@@ -155,7 +155,7 @@ function nextRound() {
             winMessage.classList.add('hidden');
             drawMessage.classList.add('hidden');
 
-            currentPlayer = 'x';
+            currentPlayer = 'X';
         });
     }
 }
@@ -171,7 +171,7 @@ function newGame() {
 
 function resetNo () {
     let noButton = document.getElementById('no-button');
-    noButton.addEventListener('click', function(){
+    noButton.addEventListener('click', function() {
         console.log('Player confirmed "no".');
 
         const warningMessage = document.getElementById('warning-message');
@@ -181,12 +181,12 @@ function resetNo () {
 
 function resetYes () {
     let yesButton = document.getElementById('yes-button');
-    yesButton.addEventListener('click', function(){
+    yesButton.addEventListener('click', function() {
         console.log('Player confirmed "yes". Resetting board and tally...');
 
         const boardSlots = document.getElementsByClassName('board-slot');
         for (const slot of boardSlots) {
-            slot.classList.remove('x', 'o');
+            slot.classList.remove('X', 'O');
             console.log('Board has successfully reset.');
             // Reset Win Scores
             let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);

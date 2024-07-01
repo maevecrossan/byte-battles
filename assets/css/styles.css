@@ -96,66 +96,66 @@ h3 {
 /* -------- Credits: X and O from Web Dev Simplified */
 /* -------- Creates X & hover*/
 
-.board-slot.x::before,
-.board-slot.x::after {
+.board-slot.X::before,
+.board-slot.X::after {
     background-color: rgb(187, 255, 0);
 }
 
-.board.x .board-slot:not(.x):not(.o):hover::before,
-.board.x .board-slot:not(.x):not(.o):hover::after {
+.board.X .board-slot:not(.X):not(.O):hover::before,
+.board.X .board-slot:not(.X):not(.O):hover::after {
     background-color: rgb(225, 255, 141, 0.95);
 }
 
-.board-slot.x::before,
-.board-slot.x::after, 
-.board.x .board-slot:not(.x):not(.o):hover::before,
-.board.x .board-slot:not(.x):not(.o):hover::after {
+.board-slot.X::before,
+.board-slot.X::after, 
+.board.X .board-slot:not(.X):not(.O):hover::before,
+.board.X .board-slot:not(.X):not(.O):hover::after {
     content: ''; /*empty string*/
     position: absolute;
     width: 15%;
     height: 90%;
 }
 
-.board-slot.x::before, 
-.board.x .board-slot:not(.x):not(.o):hover::before {
+.board-slot.X::before, 
+.board.X .board-slot:not(.X):not(.X):hover::before {
     transform: rotate(45deg);
 }
 
-.board-slot.x::after, 
-.board.x .board-slot:not(.x):not(.o):hover::after {
+.board-slot.X::after, 
+.board.X .board-slot:not(.X):not(.O):hover::after {
     transform: rotate(-45deg);
 }
 
 /* -------- Creates O */
 
-.board-slot.o::before,
-.board-slot.o::after {
+.board-slot.O::before,
+.board-slot.O::after {
     background-color: rgb(255, 0, 251);;
 }
 
-.board.o .board-slot:not(.x):not(.o):hover::before {
+.board.O .board-slot:not(.X):not(.O):hover::before {
     background-color: rgba(250, 189, 249, 0.95);
 }
 
-.board-slot.o::before,
-.board-slot.o::after, 
-.board.o .board-slot:not(.x):not(.o):hover::before,
-.board.o .board-slot:not(.x):not(.o):hover::after {
+.board-slot.O::before,
+.board-slot.O::after, 
+.board.O .board-slot:not(.X):not(.O):hover::before,
+.board.O .board-slot:not(.X):not(.O):hover::after {
     content: ''; /*empty string*/
     border-radius: 50%;
     position: absolute;
 }
 
 /* -------- O Outer Circle */
-.board-slot.o::before, 
-.board-slot:not(.x):not(.o):hover::before {
+.board-slot.O::before, 
+.board-slot:not(.X):not(.O):hover::before {
     width: 90%;
     height: 90%;
 }
 
 /* -------- O Inner Circle */
-.board-slot.o::after, 
-.board-slot:not(.x):not(.o):hover::after {
+.board-slot.O::after, 
+.board-slot:not(.X):not(.O):hover::after {
     width: 65%; 
     height: 65%;
     background-color: rgb(31, 0, 75);
@@ -225,7 +225,7 @@ button:hover {
     opacity: 0.7
 }
 
-/* Tablets and above */
+/* Small Tablets and above */
 @media screen and (min-width: 590px){
 
     .hidden-message {
@@ -264,3 +264,7 @@ button:hover {
     }
 }
     
+@media screen and (min-width: 768px) {
+/* Moves player X to the left of the board. */
+/* Moves player O to the right of the board. */
+}
