@@ -197,10 +197,12 @@ div.hidden {
 #have-fun {
     font-size: 22px;
 }
+
 .rule {
     margin: 30px 25px 0 25px;
     font-size: 15px;
     line-height: 25px;
+    font-weight: 550;
 }
 
 .warning-text {
@@ -273,6 +275,7 @@ button:hover {
     .rule {
         font-size: 26px;
         line-height: 35px;
+        font-weight: 500;
     }
     
     #tally-container {
@@ -300,6 +303,7 @@ button:hover {
         margin: 30px 70px 0px 70px;
         font-size: 32px;
         line-height: 60px;
+        font-weight: 500;
     }
 
     .player-tally {
