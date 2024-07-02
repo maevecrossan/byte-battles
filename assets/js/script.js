@@ -36,13 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("slot already occupied.");
             }
         });
-    nextRound();
-    newGame();
-    resetNo();
-    resetYes();
     }
 });
 
+nextRound();
+newGame();
+resetNo();
+resetYes();
 
 /**
  * Checks for one of the winning combinations.
@@ -220,5 +220,7 @@ function resetYes () {
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.add('hidden');
         console.log('Game reset successful.')
+
+        currentPlayer = 'X';
     });
 }
