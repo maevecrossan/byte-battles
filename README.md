@@ -1,10 +1,11 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Battle Bytes: Tic-Tac-Toe**
 
-# This template has been deprecated
+## **Introduction**
 
-Please use (and bookmark) this template instead: [CI Full Template](https://github.com/Code-Institute-Org/ci-full-template)
+Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as both a single or multiplayer game.
 
-Any projects built using the old template will continue to work. For all new projects, please use the **CI Full Template**, which will be updated more frequently.
+Link to live website: 
+https://maevecrossan.github.io/byte-battles/
 
----
-Happy coding!
+> **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
+
