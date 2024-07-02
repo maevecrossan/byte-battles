@@ -124,3 +124,6 @@ The following is a detailed showing of the colour combinations used in this proj
 
 4. White game grid (#ffffff) on purple background (#1f004b).
 ![A screenshot of the white/purple colour contrast grid.](docs/white-pruple-contrast-grid-1.png)
+
+5. Pink button (#d10575) with white text (#ffffff).
+![A screenshot of the pink/white colour contrast grid](docs/white-pink-contrast-grid-1.png)
