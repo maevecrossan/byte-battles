@@ -189,12 +189,26 @@ div.hidden {
     align-content: center;
 }
 
+#welcome-message {
+    padding-top: 60px;
+}
+
+#intro-pre,
+#have-fun {
+    font-size: 22px;
+}
+.rule {
+    margin: 30px 25px 0 25px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
 .warning-text {
     padding: 20px 20px 40px 20px;
     font-size: 20px;
 }
 
-/* New game & Next Round buttons */
+/* Start!, New game, Next Round, Yes, No buttons */
 .pink-button {
     font-size: 20px;
     font-weight: 600;
@@ -251,6 +265,16 @@ button:hover {
 }
     
 @media screen and (min-width: 1024px) {
+    #intro-pre,
+    #have-fun {
+        font-size: 30px;
+    }
+
+    .rule {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    
     #tally-container {
         display: inline-flex;
         flex-direction: row;
@@ -262,6 +286,22 @@ button:hover {
 }
 
 @media screen and (min-width: 1440px) {
+    #welcome {
+        font-size: 70px;
+        padding-bottom: 30px;
+    }
+    
+    #intro-pre,
+    #have-fun {
+        font-size: 40px;
+    }
+    
+    .rule {
+        margin: 30px 70px 0px 70px;
+        font-size: 32px;
+        line-height: 60px;
+    }
+
     .player-tally {
         width: 600px;
     }
