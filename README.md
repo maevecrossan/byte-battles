@@ -66,3 +66,32 @@ No errors were found when checked with the W3C CSS Validator.
 ![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
+#### Lighthouse 
+
+No performance or accessibility issues were found when checked with Lightouse in chrome devtools.
+
+**Mobile Test**
+![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-1.png)
+
+**Desktop Test**
+![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-1.png)
+
+#### Contrast Grid
+
+Below is an overview of all the colours used in this project. All colours received a AA or AAA rating.
+
+![An screenshot of the colour contrast grid showing all colours used.](docs/contrast-grid-overview-1.png)
+
+The following is a detailed showing of the colour combinations used in this project.
+
+1. Blue text (#54efea) on purple background (#1f004b).
+![A screenshot of the blue/purple colour contrast grid.](docs/blue-purple-contrast-grid-1.png)
+
+2. Green player X (#bbff00) on purple background (#1f004b).
+![A screenshot of the green/purple colour contrast grid.](docs/green-purple-contrast-grid-1.png)
+
+3. Pink player O (#ff00fb) on purple background (#1f004b).
+![A screenshot of the green/purple colour contrast grid.](docs/pink-purple-contrast-grid-1.png)
+
+4. White game grid (#ffffff) on purple background (#1f004b).
+![A screenshot of the white/purple colour contrast grid.](docs/white-pruple-contrast-grid-1.png)
