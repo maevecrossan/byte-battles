@@ -46,11 +46,19 @@ newGame();
 resetNo();
 resetYes();
 
+/**
+ * Displays welcome message once DOM content is loaded.
+ * Provides player(s) with rules.
+ */
 function displayWelcomeMessage() {
     const welcomeMessage = document.getElementById('welcome-message');
     welcomeMessage.classList.remove('hidden');
 }
 
+/**
+ * Hides welcome message when player
+ * clicks 'start' button.
+ */
 function hideWelcomeMessage() {
     const startButton = document.getElementById('start-button');
     startButton.addEventListener('click', function() {
