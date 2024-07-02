@@ -39,7 +39,7 @@ h3 {
     max-width: 615px;
 }
 
-.text-shadow {
+.text-shadow { /* (Text glow credits from geeksforgeeks.com) */
     text-shadow: 0 0 5px rgba(233, 250, 249, 0.552),
                 0 0 10px rgba(233, 250, 249, 0.552),
                 0 0 15px rgba(233, 250, 249, 0.552);
@@ -71,6 +71,7 @@ h3 {
     font-size: 80px;
 }
 
+/* (Credits: Technique from Web Dev Simplified) */
 /* -------- Removes outer-most border */
 .board-slot:first-child,
 .board-slot:nth-child(2),
@@ -93,7 +94,7 @@ h3 {
 }
 
 /* Characters (X's and O's) */
-/* -------- Credits: X and O from Web Dev Simplified */
+/* (Credits: X and O from Web Dev Simplified) */
 
 /* -------- Creates X */
 .board-slot.X::before,
@@ -153,13 +154,12 @@ h3 {
 
 #p-x-tally {
     border: 2px solid rgba(225, 255, 141, 0.95);
-    box-shadow: rgba(225, 255, 141, 0.95) 0 0 10px 1px;
+    box-shadow: rgba(225, 255, 141, 0.95) 0 0 10px 1px; /* (Credits: Box glow from wbshout.com) */
 
 }
 
 #p-o-tally {
     border: 2px solid rgba(250, 189, 249, 0.95);
-
     box-shadow: rgba(250, 189, 249, 0.95) 0 0 10px 1px;
 }
 

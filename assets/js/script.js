@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     nextRound();
-    newGame(); // Triggers the warning dialogue box.
-    resetNo(); // Returns to previous game board.
-    resetYes(); // Confirms reset.
+    newGame();
+    resetNo();
+    resetYes();
     }
 });
 
