@@ -12,14 +12,33 @@ https://maevecrossan.github.io/byte-battles/
 ![Am I Responsive screenshot](docs/am-i-responsive-1.png)
 
 ## UX
-
 ### Target Audiences
+
+* Casual Gamers of all ages looking for something non-commital, quick to understand and playable across multiple devices.
+
+* Children who want something colourful, easy to learn, and that they can play with their friends.
+
+* Those who enjoy puzzles who want something easy to pick up and pass the time with. 
+
+* Those looking to develop logical thinking skills such as younger students and teachers.
+
+* Retro game enjoyers who enjoy simple game design and nostalgic gaming.
 
 ### User Stories
 
 As a user...
+* I want to pass the time playing a nostalgic game.
+* I want to play a game with a unique but clutter-free environment.
+* I want to play a game with clear rules and logic.
+* I want to play a game that behaves logically.
+* I want to play a game that counts the scores accurately.
+* I want a game that I can play for a long time without any hiccups.
 
 As a business...
+* I want to establish myself in the minds of players through retro inspired game style.
+* I want to build trust with users by providing predictable, high-quality games.
+* I want to create games that users enjoy playing and looking at so that they return frequently.
+* I want users to have a pleasant experience and not be confused by any functionality or instructions.
 
 ### Opportunities
 
