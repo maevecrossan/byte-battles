@@ -3,16 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" conent="">
-        <meta name="keywords" conent="">
+        <meta name="description" conent="A solo or mulitplayer game with no set number of rounds. Play for as long as you like!">
+        <meta name="keywords" conent="game retro Tic-Tac-Toe fun puzzle challenge solo multiplayer">
         <link rel="stylesheet" href="assets/css/styles.css">
         <title>Byte Battles: Tic-Tac-Toe</title>
     </head>
 
     <body>
         <header>
+            
             <h1 class="text-shadow">Byte Battles:</h1>
+            
             <h2 class="text-shadow">Tic-Tac-Toe</h2>
+        
         </header>
 
     <!-- Game Area -->
@@ -38,6 +41,7 @@
                     <h3 class="text-shadow player">Player X</h3>
                         
                     <div class="tally-counters">
+
                         <p class="tally"> Wins: 
                             <span id="p-x-wins">0</span>
                         </p>
@@ -49,6 +53,7 @@
                         <p class="tally"> Draws: 
                             <span id="p-x-draws">0</span>
                         </p>
+                    
                     </div>
 
                 </div>
@@ -58,6 +63,7 @@
                     <h3 class="text-shadow player">Player O</h3>
                     
                     <div class="tally-counters">
+
                         <p class="tally"> Wins: 
                             <span id="p-o-wins">0</span>
                         </p>
@@ -69,6 +75,7 @@
                         <p class="tally"> Draws: 
                             <span id="p-o-draws">0</span>
                         </p>
+                    
                     </div>
 
                 </div>
@@ -82,33 +89,44 @@
 
             <!-- Hidden Win Message -->
             <div class="hidden-message hidden" id="win-message">
+                
                 <div data-win-message>
                     <h3 class="text-shadow h3-heading"> Wins! </h3> 
                 </div>
+                
                 <button class="pink-button next-round-button" id="win-next-round"> Next Round </button>
+            
             </div>
 
             <!-- Hidden Draw Message -->
             <div class="hidden-message hidden" id="draw-message">
+                
                 <div data-draw-message>
                     <h3 class="text-shadow h3-heading"> Draw! </h3> 
                 </div>
+                
                 <button class="pink-button next-round-button" id="draw-next-round"> Next Round </button>
+            
             </div>
 
             <!-- Hidden Warning/Confirm New Game Message -->
             <div class="hidden-message hidden" id="warning-message">
+                
                 <div data-warning-message>
                     <h3 class="text-shadow h3-heading"> Are you sure you want to start a new game? </h3> 
                     <p class="warning-text">All progress will be lost.</p>
                 </div>
+                
                 <button class="pink-button warning-button" id="yes-button"> Yes </button>
+                
                 <button class="pink-button warning-button" id="no-button"> No </button>
+            
             </div>
         
         </main>
 
     <script src="assets/js/script.js"></script>
-    </body>
+    
+</body>
 
 </html>
