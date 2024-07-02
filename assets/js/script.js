@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let playerO = 'O';
     let currentPlayer = 'X'; // Sets X as initial player.
 
+    displayWelcomeMessage();
+    hideWelcomeMessage();
     // Add click event to each board slot
     for (const slot of boardSlots) {
         /**
@@ -43,6 +45,20 @@ nextRound();
 newGame();
 resetNo();
 resetYes();
+
+function displayWelcomeMessage() {
+    const welcomeMessage = document.getElementById('welcome-message');
+    welcomeMessage.classList.remove('hidden');
+}
+
+function hideWelcomeMessage() {
+    const startButton = document.getElementById('start-button');
+    startButton.addEventListener('click', function() {
+        console.log('Start button clicked. Hiding welcome message.');
+        const welcomeMessage = document.getElementById('welcome-message');
+        welcomeMessage.classList.add('hidden');
+    });
+}
 
 /**
  * Checks for one of the winning combinations.
