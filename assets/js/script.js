@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("slot already occupied.");
             }
         });
-    nextRound(); // Triggers the next round once button is clicked.
+    nextRound();
     newGame(); // Triggers the warning dialogue box.
     resetNo(); // Returns to previous game board.
     resetYes(); // Confirms reset.
@@ -135,10 +135,9 @@ function addLossPoint(currentPlayer) {
 }
 
 /**
- * Triggers next round. 
+ * Triggers next round and hides message. 
  * Board reset only. 
  * Tally is kept.
- * Hides message.
  */
 function nextRound() {
     let nextRoundButtons = document.getElementsByClassName('next-round-button');
@@ -163,6 +162,9 @@ function nextRound() {
     }
 }
 
+/**
+ * Triggers warning dialogue box to confirm player's choice.
+ */
 function newGame() {
     const newGameButton = document.getElementById('new-game-button');
     newGameButton.addEventListener('click', function() {
@@ -172,6 +174,10 @@ function newGame() {
     });
 }
 
+/**
+ * Player does not want to start a new game.
+ * Returns player to previous screen with board and tally untouched.
+ */
 function resetNo () {
     let noButton = document.getElementById('no-button');
     noButton.addEventListener('click', function() {
@@ -182,6 +188,10 @@ function resetNo () {
     });
 }
 
+/**
+ * Player confirms they want to start a new game.
+ * Resets tally and board.
+ */
 function resetYes () {
     let yesButton = document.getElementById('yes-button');
     yesButton.addEventListener('click', function() {
