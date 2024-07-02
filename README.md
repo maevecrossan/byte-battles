@@ -42,6 +42,16 @@ As a business...
 
 ### Opportunities
 
+| Opportunities | Importance | Viability/Feasibility |
+|-----|:-----:|:-----:|
+| Create solo AND multiplayer tic-tac-toe game | 5 | 5 |
+| Create score tallies for both player to monitor progress | 5 | 5 |
+| Create alternative colour schemes | 2 | 2 |
+| Create a player vs CPU game | 3 | 1 |
+| Allow players to choose shapes other than 'X' and 'O' | 1 | 2 |
+| Create additional retro games (e.g. snake) | 1 | 1 |
+
+
 ### Wireframe Mockup
 
 
