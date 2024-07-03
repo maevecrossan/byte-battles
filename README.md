@@ -137,41 +137,41 @@ The choice of screensize parameters laid out above will be explained in the game
 
 1. Mobile
 
-![A screenshot of the win message on a 320px screen.](docs)
+![A screenshot of the win message on a 320px screen.](docs/win-320.jpg)
 
 2. Small tablet and up (590px)
 
-![A screenshot of the win message on a 590px screen.](docs)
+![A screenshot of the win message on a 590px screen.](docs/win-590.jpg)
 
 3. Small laptops and up (1024px)
 
-![A screenshot of the win message on a 1024px screen.](docs)
+![A screenshot of the win message on a 1024px screen.](docs/win-1024.jpg)
 
 4. Large Screens (1440px)
 
-![A screenshot of the win message on a 1440px screen.](docs)
+![A screenshot of the win message on a 1440px screen.](docs/win-1440.jpg)
 
 ##### Draw Message
 
 1. Mobile
 
-![A screenshot of the draw message on a 320px screen.](docs)
+![A screenshot of the draw message on a 320px screen.](docs/draw-320.jpg)
 
 2. Small tablet and up (590px)
 
-![A screenshot of the draw message on a 590px screen.](docs)
+![A screenshot of the draw message on a 590px screen.](docs/draw-590.jpg)
 
 3. Small laptops and up (1024px)
 
-![A screenshot of the draw message on a 1024px screen.](docs)
+![A screenshot of the draw message on a 1024px screen.](docs/draw-1024.jpg)
 
 4. Large Screens (1440px)
 
-![A screenshot of the win message on a 1440px screen.](docs)
+![A screenshot of the win message on a 1440px screen.](docs/draw-1440.jpg)
 
 
 ### Game Features
-Regardless of screen size, the game displays the game board, two player tallies and a 'new game' button. 
+Regardless of screen size, the page displays the game board, two player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
 
 #### Game Board
 
