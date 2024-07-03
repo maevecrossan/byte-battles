@@ -212,11 +212,12 @@ Below, you will see how the tallies progressively stretch horizontally to make u
 ![A screenshot of the player tallies on a 1440px screen.](docs/tallies-1440.jpg)
 
 #### New Game Button
-
+Below is the 'new game' button. It's appearance is maintained across all screen sizes and is always found beneath the player tallies.
+![A screenshot of the pink new game button.](docs/new-game-button.jpg)
 
 #### Next Round Button
-
-
+Below is the 'next round' button. Its appearance is maintained across all screen sizes. It is only found in the 'draw' and 'win' messages.
+![A screenshot of the pink next round button.](docs/next-round-button.jpg)
 
 ## Testing
 ### Developmental Testing
