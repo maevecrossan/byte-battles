@@ -100,29 +100,37 @@ The choice of screensize parameters laid out above will be explained in the game
 ##### Welcome Message
 
 1. Mobile
-![A screenshot of the welcome message on a 320px screen.](docs)
+
+![A screenshot of the welcome message on a 320px screen.](docs/welcome-320.jpg)
 
 2. Small tablet and up (590px)
-![A screenshot of the welcome message on a 590px screen.](docs)
+
+![A screenshot of the welcome message on a 590px screen.](docs/welcome-590.jpg)
 
 3. Small laptops and up (1024px)
-![A screenshot of the welcome message on a 1024px screen.](docs)
+
+![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
 
 4. Large Screens (1440px)
-![A screenshot of the welcome message on a 1440px screen.](docs)
+
+![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.jpg)
 
 ##### Warning Message
 
 1. Mobile
+
 ![A screenshot of the warning message on a 320px screen.](docs/warning-320.jpg)
 
 2. Small tablet and up (590px)
+
 ![A screenshot of the warning message on a 590px screen.](docs/warning-590.jpg)
 
 3. Small laptops and up (1024px)
+
 ![A screenshot of the warning message on a 1024px screen.](docs/warning-1024.jpg)
 
 4. Large Screens (1440px)
+
 ![A screenshot of the warning message on a 1440px screen.](docs/warning-1440.jpg)
 
 ##### Win Message
