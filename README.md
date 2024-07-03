@@ -177,23 +177,39 @@ Regardless of screen size, the page displays the game board, two player tallies 
 
 1. Mobile
 
+![A screenshot of the game board on a 320px screen.](docs/board-320.jpg)
+
 2. Small tablet and up (590px)
+
+![A screenshot of the game board on a 590px screen.](docs/board-590.jpg)
 
 3. Small laptops and up (1024px)
 
+![A screenshot of the game board on a 1024px screen.](docs/board-1024.jpg)
+
 4. Large Screens (1440px)
 
-#### Score Tally
+![A screenshot of the game board on a 1440px screen.](docs/board-1440.jpg)
+
+#### Score Tallies
 As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible I wanted to avoid the player needing to scroll excessively to see their scores. 
 Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement and much as I could, so I chose the second screensize to be 590px. 
 
 1. Mobile
 
+![A screenshot of the player tallies on a 320px screen.](docs/tallies-320.jpg)
+
 2. Small tablet and up (590px)
+
+![A screenshot of the player tallies on a 590px screen.](docs/tallies-590.jpg)
 
 3. Small laptops and up (1024px)
 
+![A screenshot of the player tallies on a 1024px screen.](docs/tallies-1024.jpg)
+
 4. Large Screens (1440px)
+
+![A screenshot of the player tallies on a 1440px screen.](docs/tallies-1440.jpg)
 
 #### New Game Button
 
