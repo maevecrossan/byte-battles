@@ -137,21 +137,37 @@ The choice of screensize parameters laid out above will be explained in the game
 
 1. Mobile
 
+![A screenshot of the win message on a 320px screen.](docs)
+
 2. Small tablet and up (590px)
+
+![A screenshot of the win message on a 590px screen.](docs)
 
 3. Small laptops and up (1024px)
 
+![A screenshot of the win message on a 1024px screen.](docs)
+
 4. Large Screens (1440px)
+
+![A screenshot of the win message on a 1440px screen.](docs)
 
 ##### Draw Message
 
 1. Mobile
 
+![A screenshot of the draw message on a 320px screen.](docs)
+
 2. Small tablet and up (590px)
+
+![A screenshot of the draw message on a 590px screen.](docs)
 
 3. Small laptops and up (1024px)
 
+![A screenshot of the draw message on a 1024px screen.](docs)
+
 4. Large Screens (1440px)
+
+![A screenshot of the win message on a 1440px screen.](docs)
 
 
 ### Game Features
