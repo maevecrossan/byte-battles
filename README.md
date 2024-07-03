@@ -87,10 +87,13 @@ Below is a detailed description of the colour combinations used:
 | White | #ffffff/rgb(255, 255, 255) | Button text |
 | Pink | #d10575/rgb(209, 5, 117) | Button background |
 | Bright Green | #bbff00/rgb(187, 255, 0) | Player X |
-| Bright Pink | #ff00fb/rgb(255, 0, 251)| PLayer O |
+| Bright Pink | #ff00fb/rgb(255, 0, 251)| Player O |
 | Bright Blue | #54efea/rgb(84, 239, 234) | Body text |
 
 #### Typography
+
+There is only one font used in this project. 'Orbitron' was downloaded from Google Fonts. Depending on its location, varying font weights were added to help readability. I chose this retro, arcade-like font to add another layer of nostalgia to the project.
+A glow was also added to the larger text to emulate a neon effect and to provide visual differentiation. 
 
 #### Content Layout------------
 ##### Welcome Message
