@@ -100,12 +100,16 @@ The choice of screensize parameters laid out above will be explained in the game
 ##### Welcome Message
 
 1. Mobile
+![A screenshot of the welcome message on a 320px screen.](docs/welcome-320.png)
 
 2. Small tablet and up (590px)
+![A screenshot of the welcome message on a 590px screen.](docs/welcome-590.png)
 
 3. Small laptops and up (1024px)
+![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.png)
 
 4. Large Screens (1440px)
+![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.png)
 
 ##### Warning Message
 
