@@ -54,18 +54,84 @@ As a business...
 
 
 ### Wireframe Mockup
+Below is the initial sketch I created using Procreate on my iPad. Once the game logic had been fully thought out, however, the final appearance had changed.
+For example, what was originally one tally became two. I also decided to not use alerts and instead use hidden divs so I could maintain the aesthetic consistent. 
 
+![A screenshot of the game page wireframe](docs/rough-mockup-1.png)
 
 ## Features
-
 ### General
-##### The Logo / Title
 
 #### Colour Palette
 
+Below is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
+![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
+
+Below is a detailed description of the colour combinations used:
+
+1. Blue text (body) on a purple background.
+![Contrast grid screenshot showing blue and purple scores.](docs/blue-purple-contrast-grid-1.png)
+
+2. White text on a pink background (pink buttons).
+![Contrast grid screenshot showing blue and purple scores.](docs/white-pink-contrast-grid-1.png)
+
+3. Player X on a purple background.
+![Contrast grid screenshot showing green and purple scores.](docs/green-purple-contrast-grid-1.png)
+
+4. Player O on a purple background.
+![Contrast grid screenshot showing pink and purple scores.](docs/pink-purple-contrast-grid-1.png)
+
+| Colour Name | Codes | Use |
+|-----|:-----:|:-----:|
+| Purple | #1f004b/rgb(31, 0, 75) | Page background |
+| White | #ffffff/rgb(255, 255, 255) | Button text |
+| Pink | #d10575/rgb(209, 5, 117) | Button background |
+| Bright Green | #bbff00/rgb(187, 255, 0) | Player X |
+| Bright Pink | #ff00fb/rgb(255, 0, 251)| PLayer O |
+| Bright Blue | #54efea/rgb(84, 239, 234) | Body text |
+
 #### Typography
 
-#### Content Layout
+#### Content Layout------------
+##### Welcome Message
+
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
+
+##### Warning Message
+
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
+
+##### Win Message
+
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
+
+##### Draw Message
+
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
 
 
 ### Game Features
@@ -124,7 +190,7 @@ The following is a detailed showing of the colour combinations used in this proj
 ![A screenshot of the green/purple colour contrast grid.](docs/pink-purple-contrast-grid-1.png)
 
 4. White game grid (#ffffff) on purple background (#1f004b).
-![A screenshot of the white/purple colour contrast grid.](docs/white-pruple-contrast-grid-1.png)
+![A screenshot of the white/purple colour contrast grid.](docs/white-purple-contrast-grid-1.png)
 
 5. Pink button (#d10575) with white text (#ffffff).
 ![A screenshot of the pink/white colour contrast grid](docs/white-pink-contrast-grid-1.png)
