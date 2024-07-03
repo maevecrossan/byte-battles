@@ -60,11 +60,15 @@ For example, what was originally one tally became two. I also decided to not use
 ![A screenshot of the game page wireframe](docs/rough-mockup-1.png)
 
 ## Features
+
 ### General
+
+Across all screen sizes, the content will be aligned in the centre. This includes the hidden messages.
+All body text is blue, and all buttons are pink with white text. The X's are green when placed on the board, corresponding to the green glow around player X's tally. Player O has the same features but in pink.
 
 #### Colour Palette
 
-Below is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
+This is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
 ![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
 
 Below is a detailed description of the colour combinations used:
@@ -96,6 +100,15 @@ There is only one font used in this project. 'Orbitron' was downloaded from Goog
 A glow was also added to the larger text to emulate a neon effect and to provide visual differentiation. 
 
 #### Content Layout------------
+
+Below are a series of screenshots demonstrating how the hidden messages are displayed among the varying size screens. As you will see in a moment, I chose to make the game responsive based on four different screen sizes: 
+* 320px (mobile) 
+* 590px (small tablet) 
+* 1024px (small laptops)
+* 1440px (large screens) and up
+
+The choice of screensize parameters laid out above will be explained in the game features section. 
+
 ##### Welcome Message
 
 1. Mobile
@@ -138,13 +151,35 @@ A glow was also added to the larger text to emulate a neon effect and to provide
 
 
 ### Game Features
+Regardless of screen size, the game displays the game board, two player tallies and a 'new game' button. 
+
 #### Game Board
 
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
+
 #### Score Tally
+As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible I wanted to avoid the player needing to scroll excessively to see their scores. 
+Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement and much as I could, so I chose the second screensize to be 590px. 
+
+1. Mobile
+
+2. Small tablet and up (590px)
+
+3. Small laptops and up (1024px)
+
+4. Large Screens (1440px)
 
 #### New Game Button
 
+
 #### Next Round Button
+
 
 
 ## Testing
