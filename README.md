@@ -71,19 +71,7 @@ All body text is blue, and all buttons are pink with white text. The X's are gre
 This is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
 ![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
 
-Below is a detailed description of the colour combinations used:
-
-1. Blue text (body) on a purple background.
-![Contrast grid screenshot showing blue and purple scores.](docs/blue-purple-contrast-grid-1.png)
-
-2. White text on a pink background (pink buttons).
-![Contrast grid screenshot showing blue and purple scores.](docs/white-pink-contrast-grid-1.png)
-
-3. Player X on a purple background.
-![Contrast grid screenshot showing green and purple scores.](docs/green-purple-contrast-grid-1.png)
-
-4. Player O on a purple background.
-![Contrast grid screenshot showing pink and purple scores.](docs/pink-purple-contrast-grid-1.png)
+> **Note:** A detailed breakdown of the colours used together can be found in the testing section
 
 | Colour Name | Codes | Use |
 |-----|:-----:|:-----:|
