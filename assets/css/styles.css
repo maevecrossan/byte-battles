@@ -106,7 +106,7 @@ footer {
 .board-slot.X::before,
 .board-slot.X::after {
     background-color: rgb(187, 255, 0);
-    content: ''; /*empty string*/
+    content: ''; /* Allows pseudo elements to render */
     position: absolute;
     width: 15%;
     height: 90%;
@@ -125,7 +125,7 @@ footer {
 .board-slot.O::before,
 .board-slot.O::after {
     background-color: rgb(255, 0, 251);
-    content: ''; /*empty string*/
+    content: ''; /* Allows pseudo elements to render */
     border-radius: 50%;
     position: absolute;
 }
