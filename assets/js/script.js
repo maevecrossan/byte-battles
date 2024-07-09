@@ -1,12 +1,14 @@
-// Waits for the DOM to load before initailising game.
-document.addEventListener("DOMContentLoaded", function() {
-    // Selects all board slots (where X's and O's can be placed)
+// Global Scope: Resused Variables
+    // ---- Selects all board slots (where X's and O's can be placed).
     const boardSlots = document.getElementsByClassName('board-slot');
     const board = document.getElementById('game-board');
-    // Establishes first player when game loads
+    // ---- Establishes first player when game loads.
     let playerX ='X';
     let playerO = 'O';
     let currentPlayer = 'X'; // Sets X as initial player.
+
+// Waits for the DOM to load before initailising game.
+document.addEventListener("DOMContentLoaded", function() {
 
     displayWelcomeMessage();
     hideWelcomeMessage();
@@ -80,7 +82,7 @@ function winResult(player) {
     ];
     
     const result = winningCombos.some(combo => { // Checks for winning combos on the game board.
-        return combo.every(index=> boardSlots[index].classList.contains(player)) // Checks for player characters in relevant indices/slots. 
+        return combo.every(index=> boardSlots[index].classList.contains(player)); // Checks for player characters in relevant indices/slots. 
         });
     console.log(`${player} win status: ${result}`);
     return result; //Returns result of win check.
@@ -169,7 +171,7 @@ function nextRound() {
     for (const button of nextRoundButtons) {
     
         button.addEventListener('click', function() {
-            console.log('A new round has been started. Emptying slots...')
+            console.log('A new round has been started. Emptying slots...');
             const boardSlots = document.getElementsByClassName('board-slot');
             for (const slot of boardSlots) {
                 slot.classList.remove('X', 'O');
@@ -227,23 +229,23 @@ function resetYes () {
             console.log('Board has successfully reset.');
             // Reset Win Scores
             let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
-            document.getElementById('p-x-wins').innerHTML = 0;
+            xWins.innerHTML = 0;
             let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
-            document.getElementById('p-o-wins').innerHTML = 0;
+            oWins.innerHTML = 0;
             //Reset Loss Scores
             let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
-            document.getElementById('p-x-losses').innerHTML = 0;
+            xLoss.innerHTML = 0;
             let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
-            document.getElementById('p-o-losses').innerHTML = 0;
+            oLoss.innerHTML = 0;
             // Reset Draw Scores
             let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
-            document.getElementById('p-x-draws').innerHTML = 0;
+            xDraws.innerHTML = 0;
             let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
-            document.getElementById('p-o-draws').innerHTML = 0;
+            oDraws.innerHTML = 0;
         }
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.add('hidden');
-        console.log('Game reset successful.')
+        console.log('Game reset successful.');
 
         currentPlayer = 'X';
     });
