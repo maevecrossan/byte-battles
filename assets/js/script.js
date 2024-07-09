@@ -6,6 +6,7 @@
     let playerX ='X';
     let playerO = 'O';
     let currentPlayer = 'X'; // Sets X as initial player.
+    let lastWinner = null;
 
 // Waits for the DOM to load before initailising game.
 document.addEventListener("DOMContentLoaded", function() {
@@ -35,6 +36,7 @@ function occupiedCheck(event) {
 
         // Check if win or draw conditions are met.
         if (winResult(currentPlayer)){
+            lastWinner = currentPlayer; // Updated last winner
             addWinPoint(currentPlayer); 
             addLossPoint(currentPlayer);
             displayWinMessage(currentPlayer);
@@ -182,7 +184,8 @@ function nextRound() {
         
         const winMessage = document.getElementById('win-message').classList.add('hidden');
         const drawMessage = document.getElementById('draw-message').classList.add('hidden');
-        currentPlayer = 'X';
+        
+        currentPlayer = (lastWinner === 'X') ? 'O' : 'X';
     };
     
     for (const button of nextRoundButtons) {
