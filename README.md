@@ -237,10 +237,13 @@ https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&
 No errors were found when checked with the W3C CSS Validator.
 
 ![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
-https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css
 
 ##### JS Hint
 
+Some warnings were noted in JS Hint. These initial warnings will be discussed in the TESTING.md file. Below, however, is a screenshot of JS Hint upon project completion.
+
+![A screenshot of JS Hint metrics.](docs/js-hint-final-metrics.png)
 
 #### Lighthouse 
 
