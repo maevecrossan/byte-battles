@@ -39,6 +39,12 @@ h3 {
     max-width: 615px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
 .text-shadow { /* (Text glow credits from geeksforgeeks.com) */
     text-shadow: 0 0 5px rgba(233, 250, 249, 0.552),
                 0 0 10px rgba(233, 250, 249, 0.552),
@@ -231,6 +237,13 @@ div.hidden {
 
 button:hover {
     opacity: 0.7
+}
+
+#social-media a {
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    margin: 30px;
+    font-size: 30px;
 }
 
 /* Small Tablets and above */
