@@ -9,44 +9,48 @@
 
 // Waits for the DOM to load before initailising game.
 document.addEventListener("DOMContentLoaded", function() {
-
     displayWelcomeMessage();
     hideWelcomeMessage();
-    // Add click event to each board slot
-    for (const slot of boardSlots) {
-        /**
-         * Determines slot occupancy and determines next function.
-         */
-        slot.addEventListener('click', function occupiedCheck() {
-            if (!slot.classList.contains('X') && !slot.classList.contains('O')) {
-                // If unoccupied, add current player's character to the chosen slot.
-                slot.classList.add(currentPlayer);
-
-                // Check if win or draw conditions are met.
-                if (winResult(currentPlayer)){
-                    addWinPoint(currentPlayer); 
-                    addLossPoint(currentPlayer);
-                    displayWinMessage(currentPlayer);
-                } else if (drawResult()) {
-                    addDrawPoint();
-                    displayDrawMessage();
-                } else { // Player swap if neither win or draw
-                    currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
-                    board.classList.toggle(playerX);
-                    board.classList.toggle(playerO);
-                    console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
-                }
-            } else {
-                console.log("slot already occupied.");
-            }
-        });
-    }
+    addBoardSlotEventListeners();
+    nextRound();
+    newGame();
+    resetNo();
+    resetYes();
 });
 
-nextRound();
-newGame();
-resetNo();
-resetYes();
+/**
+ * Add Event listeners to each board slot.
+ */
+function addBoardSlotEventListeners() {
+    for (var slot of boardSlots) {
+        slot.addEventListener('click', occupiedCheck);
+    }
+}
+
+function occupiedCheck(event) {
+    const slot = event.target;
+    if (!slot.classList.contains('X') && !slot.classList.contains('O')) {
+        // If unoccupied, add current player's character to the chosen slot.
+        slot.classList.add(currentPlayer);
+
+        // Check if win or draw conditions are met.
+        if (winResult(currentPlayer)){
+            addWinPoint(currentPlayer); 
+            addLossPoint(currentPlayer);
+            displayWinMessage(currentPlayer);
+        } else if (drawResult()) {
+            addDrawPoint();
+            displayDrawMessage();
+        } else { // Player swap if neither win or draw
+            currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
+            board.classList.toggle(playerX);
+            board.classList.toggle(playerO);
+            console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
+        }
+    } else {
+        console.log("slot already occupied.");
+    }
+}
 
 /**
  * Displays welcome message once DOM content is loaded.
@@ -228,20 +232,14 @@ function resetYes () {
             slot.classList.remove('X', 'O');
             console.log('Board has successfully reset.');
             // Reset Win Scores
-            let xWins = parseInt(document.getElementById('p-x-wins').innerHTML);
-            xWins.innerHTML = 0;
-            let oWins = parseInt(document.getElementById('p-o-wins').innerHTML);
-            oWins.innerHTML = 0;
+            document.getElementById('p-x-wins').innerHTML = 0;
+            document.getElementById('p-o-wins').innerHTML = 0;
             //Reset Loss Scores
-            let xLoss = parseInt(document.getElementById('p-x-losses').innerHTML);
-            xLoss.innerHTML = 0;
-            let oLoss = parseInt(document.getElementById('p-o-losses').innerHTML);
-            oLoss.innerHTML = 0;
+            document.getElementById('p-x-losses').innerHTML = 0;
+            document.getElementById('p-o-losses').innerHTML = 0;
             // Reset Draw Scores
-            let xDraws = parseInt(document.getElementById('p-x-draws').innerHTML);
-            xDraws.innerHTML = 0;
-            let oDraws = parseInt(document.getElementById('p-o-draws').innerHTML);
-            oDraws.innerHTML = 0;
+            document.getElementById('p-x-draws').innerHTML = 0;
+            document.getElementById('p-o-draws').innerHTML = 0;
         }
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.add('hidden');
