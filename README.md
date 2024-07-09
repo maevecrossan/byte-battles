@@ -232,12 +232,15 @@ Below is the 'next round' button. Its appearance is maintained across all screen
 No errors were found when checked with the W3C HTML Validator.
 
 ![A screenshot of the W3C HTML Validator results.](docs/w3c-html-bb-1.png)
-https://validator.w3.org/nu/?doc=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F
+https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F
 
 No errors were found when checked with the W3C CSS Validator.
 
 ![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+
+##### JS Hint
+
 
 #### Lighthouse 
 
