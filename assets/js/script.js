@@ -182,9 +182,17 @@ function nextRound() {
             slot.classList.remove('X', 'O');
         }
         
-        const winMessage = document.getElementById('win-message').classList.add('hidden');
-        const drawMessage = document.getElementById('draw-message').classList.add('hidden');
-        
+        // Hide win message
+        const winMessage = document.getElementById('win-message');
+        if (!winMessage.classList.contains('hidden')) {
+            winMessage.classList.add('hidden');
+        }
+
+        // Hide draw message
+        const drawMessage = document.getElementById('draw-message');
+        if (!drawMessage.classList.contains('hidden')) {
+            drawMessage.classList.add('hidden');
+        }
         currentPlayer = (lastWinner === 'X') ? 'O' : 'X';
     };
     
