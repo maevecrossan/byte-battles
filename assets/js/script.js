@@ -170,25 +170,23 @@ function addLossPoint(currentPlayer) {
  * Tally is kept.
  */
 function nextRound() {
-    let nextRoundButtons = document.getElementsByClassName('next-round-button');
+    const nextRoundButtons = document.getElementsByClassName('next-round-button');
+    
+    const nextRoundHandler = function() {
+        
+        console.log('A new round has been started. Emptying slots...');
+        
+        for (const slot of boardSlots) {
+            slot.classList.remove('X', 'O');
+        }
+        
+        const winMessage = document.getElementById('win-message').classList.add('hidden');
+        const drawMessage = document.getElementById('draw-message').classList.add('hidden');
+        currentPlayer = 'X';
+    };
     
     for (const button of nextRoundButtons) {
-    
-        button.addEventListener('click', function() {
-            console.log('A new round has been started. Emptying slots...');
-            const boardSlots = document.getElementsByClassName('board-slot');
-            for (const slot of boardSlots) {
-                slot.classList.remove('X', 'O');
-            }
-            
-            const winMessage = document.getElementById('win-message');
-            const drawMessage = document.getElementById('draw-message');
-            
-            winMessage.classList.add('hidden');
-            drawMessage.classList.add('hidden');
-
-            currentPlayer = 'X';
-        });
+        button.addEventListener('click', nextRoundHandler);
     }
 }
 
