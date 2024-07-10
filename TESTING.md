@@ -13,7 +13,7 @@ Below are a series of screenshots demonstrating how the hidden messages are disp
 
 The choice of screensize parameters laid out above will be explained in the game features section. 
 
-##### Welcome Message
+#### Welcome Message
 
 1. Mobile
 
@@ -31,7 +31,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.jpg)
 
-##### Warning Message
+#### Warning Message
 
 1. Mobile
 
@@ -49,7 +49,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the warning message on a 1440px screen.](docs/warning-1440.jpg)
 
-##### Win Message
+#### Win Message
 
 1. Mobile
 
@@ -67,7 +67,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the win message on a 1440px screen.](docs/win-1440.jpg)
 
-##### Draw Message
+#### Draw Message
 
 1. Mobile
 

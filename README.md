@@ -70,6 +70,7 @@ For example, what was originally one tally became two. I also decided not to use
 
 Across all screen sizes, the content will be aligned in the centre. This includes the hidden messages.
 All body text is blue, and all buttons are pink with white text. The X's are green when placed on the board, corresponding to the green glow around player X's tally. Player O has the same features but in pink.
+On all devices, the footer sticks to the bottom and houses two social media links. Both links open in new tabs and link to my personal profiles.
 
 #### Content Layout
 
@@ -86,6 +87,9 @@ Below are screenshots of how the content is displayed. The screenshots are taken
 
 ##### The New Game Button
 ![A screenshot of the pink new game button.](docs/new-game-button.jpg)
+
+##### Social Media Links (footer)
+![A screenshot of the media links in the footer](docs/social-media-footer.jpg)
 
 ##### The Next Round Button
 ![A screenshot of the pink next round button.](docs/next-round-button.jpg)
@@ -104,7 +108,7 @@ Below are screenshots of how the content is displayed. The screenshots are taken
 Following is an overview of all the colours used in this project. Every colour combination received a minimum of an AA rating.
 ![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
 
-> **Note:** A detailed breakdown of the colours used together can be found in the testing section
+> **Note:** A detailed breakdown of the colours used together can be found in the testing file.
 
 | Colour Name | Codes | Use |
 |-----|:-----:|:-----:|
