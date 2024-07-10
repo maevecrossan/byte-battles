@@ -47,10 +47,7 @@ function occupiedCheck(event) {
             currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
             board.classList.toggle(playerX);
             board.classList.toggle(playerO);
-            console.log(`Next player: ${currentPlayer}`); // Player logging for debugging.
         }
-    } else {
-        console.log("slot already occupied.");
     }
 }
 
@@ -70,7 +67,6 @@ function displayWelcomeMessage() {
 function hideWelcomeMessage() {
     const startButton = document.getElementById('start-button');
     startButton.addEventListener('click', function() {
-        console.log('Start button clicked. Hiding welcome message.');
         const welcomeMessage = document.getElementById('welcome-message');
         welcomeMessage.classList.add('hidden');
     });
@@ -90,7 +86,6 @@ function winResult(player) {
     const result = winningCombos.some(combo => { // Checks for winning combos on the game board.
         return combo.every(index=> boardSlots[index].classList.contains(player)); // Checks for player characters in relevant indices/slots. 
         });
-    console.log(`${player} win status: ${result}`);
     return result; //Returns result of win check.
 }
 
@@ -124,7 +119,6 @@ function displayWinMessage(player) {
 function drawResult() {
     const boardSlots = document.getElementsByClassName('board-slot');
     const occupied = [...boardSlots].every(slot => slot.classList.contains('X') || slot.classList.contains('O'));
-    console.log(`Draw Result: ${occupied}`);
     return occupied;
 }
 
@@ -176,8 +170,6 @@ function nextRound() {
     
     const nextRoundHandler = function() {
         
-        console.log('A new round has been started. Emptying slots...');
-        
         for (const slot of boardSlots) {
             slot.classList.remove('X', 'O');
         }
@@ -207,7 +199,6 @@ function nextRound() {
 function newGame() {
     const newGameButton = document.getElementById('new-game-button');
     newGameButton.addEventListener('click', function() {
-        console.log('New Game button clicked. Displaying warning message.');
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.remove('hidden');
     });
@@ -220,7 +211,6 @@ function newGame() {
 function resetNo () {
     let noButton = document.getElementById('no-button');
     noButton.addEventListener('click', function() {
-        console.log('Player confirmed "no".');
 
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.add('hidden');
@@ -234,12 +224,10 @@ function resetNo () {
 function resetYes () {
     let yesButton = document.getElementById('yes-button');
     yesButton.addEventListener('click', function() {
-        console.log('Player confirmed "yes". Resetting board and tally...');
 
         const boardSlots = document.getElementsByClassName('board-slot');
         for (const slot of boardSlots) {
             slot.classList.remove('X', 'O');
-            console.log('Board has successfully reset.');
             // Reset Win Scores
             document.getElementById('p-x-wins').innerHTML = 0;
             document.getElementById('p-o-wins').innerHTML = 0;
@@ -252,7 +240,6 @@ function resetYes () {
         }
         const warningMessage = document.getElementById('warning-message');
         warningMessage.classList.add('hidden');
-        console.log('Game reset successful.');
 
         currentPlayer = 'X';
     });
