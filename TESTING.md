@@ -85,6 +85,24 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the win message on a 1440px screen.](docs/draw-1440.jpg)
 
+#### Social Media Links (footer)
+
+1. Mobile
+
+![A screenshot of the .](docs)
+
+2. Small tablet and up (590px)
+
+![A screenshot of the .](docs)
+
+3. Small laptops and up (1024px)
+
+![A screenshot of the .](docs)
+
+4. Large Screens (1440px)
+
+![A screenshot of the .](docs)
+
 
 ### Game Features
 Regardless of screen size, the page displays the game board, two player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
@@ -136,6 +154,7 @@ Below is the 'new game' button. It's appearance is maintained across all screen 
 Below is the 'next round' button. Its appearance is maintained across all screen sizes. It is only found in the 'draw' and 'win' messages.
 
 ![A screenshot of the pink next round button.](docs/next-round-button.jpg)
+
 
 ## Testing
 
