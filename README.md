@@ -3,7 +3,7 @@
 
 ## **Introduction**
 
-Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as both a single or multiplayer game.
+Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as both a single or multiplayer game from one device.
 
 > **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
 
@@ -13,7 +13,7 @@ https://maevecrossan.github.io/byte-battles/
 Testing can be found in a separate file here: 
 [TESTING.md](TESTING.md)
 
-![Am I Responsive screenshot](docs/am-i-responsive-1.png)
+![Am I Responsive screenshot](docs/am-i-responsive-2.png)
 
 ## UX
 ### Target Audiences
