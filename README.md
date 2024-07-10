@@ -77,7 +77,7 @@ On all devices, the footer sticks to the bottom and houses two social media link
 Below are screenshots of how the content is displayed. The screenshots are taken on a 1024px screen. An in-depth look at how the content responds on different devices can be found in the testing section.
 
 ##### The Welcome Message
-![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
+![A screenshot of the welcome message on a 1024px screen.](docs/welcome-message-1024-2.jpg)
 
 ##### The Game Board
 ![A screenshot of the game board on a 1024px screen.](docs/board-1024.jpg)

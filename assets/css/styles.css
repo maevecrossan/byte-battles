@@ -306,6 +306,10 @@ button:hover {
         font-size: 70px;
         padding-bottom: 30px;
     }
+
+    h3 {
+        max-width: 800px;
+    }
     
     #intro-pre,
     #have-fun {
@@ -313,7 +317,7 @@ button:hover {
     }
     
     .rule {
-        margin: 30px 70px 0px 70px;
+        margin: 30px 70px 30px 70px;
         font-size: 32px;
         line-height: 60px;
         font-weight: 500;

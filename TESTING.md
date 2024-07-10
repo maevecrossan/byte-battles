@@ -19,19 +19,19 @@ The responsiveness of each element was tested immediately and repeatedly after s
 
 1. Mobile
 
-![A screenshot of the welcome message on a 320px screen.](docs/welcome-320.jpg)
+![A screenshot of the welcome message on a 320px screen.](docs/welcome-message-320-2.jpg)
 
 2. Small tablet and up (590px)
 
-![A screenshot of the welcome message on a 590px screen.](docs/welcome-590.jpg)
+![A screenshot of the welcome message on a 590px screen.](docs/welcome-message-590-2.jpg)
 
 3. Small laptops and up (1024px)
 
-![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
+![A screenshot of the welcome message on a 1024px screen.](docs/welcome-message-1024-2.jpg)
 
 4. Large Screens (1440px)
 
-![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.jpg)
+![A screenshot of the welcome message on a 1440px screen.](docs/welcome-message-1440-2.jpg)
 
 ##### Warning Message
 
