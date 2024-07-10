@@ -229,6 +229,16 @@ No performance or accessibility issues were found when checked with Lightouse in
 **Desktop Test**
 ![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-2.png)
 
+#### Performance Testing
+
+I tested how the content would appear and how the game performed using the following devices:
+
+* iPhone 14 Pro Max: 2796px x 1290px
+* iPad Pro: 2732px x 2048px
+* Macbook Pro: 2880px x 1800px
+* BenQ EL2870U Display: 3840px x 2160px
+
+
 ### Bugs and Fixes
 
 There were several bugs encountered during the development of this project. The bugs primarily happened when writing the JavaScript.
