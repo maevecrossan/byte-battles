@@ -145,3 +145,28 @@ There are several ways in which I think this project could be improved upon had 
 5. I would like to include a theme-changer. I understand that gamers enjoy different aesthetics and play in varying environments, so I feel giving them the option to change the theme would be a welcomed feature.
 
 6. Another feature I would like to add is a sound effects toggle. Some players like to have sound effects, while others don't. I think adding small sound effects for when slots are clicked or a new game is started could add more interactivity to the game.
+
+## Deployment
+This project was deployed to GitHub pages. The steps I took were as follows:
+1. After selecting and opening the GitHub repository, open the Settings menu. 
+2. Under the Code and Automation on the left, select Pages.
+3. For source, select ‘Deploy from a branch’.
+4. Select ‘Main’, then ‘/root’.
+5. Save your choices and wait for the deployment to load.
+
+## Credits
+### Content
+* The 'Orbitron' font used in this project was sourced from [Google Fonts](https://fonts.google.com/specimen/Orbitron).
+
+* Text glow credits (see inline comments in CSS): [www.geeksforgeeks.com](https://www.geeksforgeeks.org/create-a-glowing-text-shadow-using-html-and-css/)
+
+* X and O CSS shapes (see inline comments in CSS): [Web Dev Simplified](https://www.youtube.com/watch?v=Y-GkMjUZsmM&ab_channel=WebDevSimplified)
+
+### Testing Resources
+The following were used for testing (during and post-development):
+
+* [WAVE Evaluation Tool (Chrome Extension)](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+* [W3C Markup Validation Service (HTML)](https://validator.w3.org/)
+* [W3C CSS Validation Service (CSS)](https://jigsaw.w3.org/css-validator/)
+* [Am I Responsive?](https://ui.dev/amiresponsive)
+* [Contrast Grid](https://contrast-grid.eightshapes.com/)
