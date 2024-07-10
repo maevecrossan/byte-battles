@@ -101,7 +101,7 @@ Below are screenshots of how the content is displayed. The screenshots are taken
 ![A screenshot of the win message on a 1024px screen.](docs/win-1024.jpg)
 
 ##### The Draw Message
-![A screenshot of the draw message on a 1024px screen.](docs/draw-1024.jpg)
+![A screenshot of the draw message on a 1024px screen.](docs/draw-message-1024-2.jpg)
 
 #### Colour Palette
 

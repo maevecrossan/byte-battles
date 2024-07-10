@@ -73,19 +73,19 @@ The responsiveness of each element was tested immediately and repeatedly after s
 
 1. Mobile
 
-![A screenshot of the draw message on a 320px screen.](docs/draw-320.jpg)
+![A screenshot of the draw message on a 320px screen.](docs/draw-message-320-2.jpg)
 
 2. Small tablet and up (590px)
 
-![A screenshot of the draw message on a 590px screen.](docs/draw-590.jpg)
+![A screenshot of the draw message on a 590px screen.](docs/draw-message-590-2.jpg)
 
 3. Small laptops and up (1024px)
 
-![A screenshot of the draw message on a 1024px screen.](docs/draw-1024.jpg)
+![A screenshot of the draw message on a 1024px screen.](docs/draw-message-1024-2.jpg)
 
 4. Large Screens (1440px)
 
-![A screenshot of the win message on a 1440px screen.](docs/draw-1440.jpg)
+![A screenshot of the win message on a 1440px screen.](docs/draw-message-1440-2.jpg)
 
 ##### Social Media Links (footer)
 
