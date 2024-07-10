@@ -89,19 +89,19 @@ The choice of screensize parameters laid out above will be explained in the game
 
 1. Mobile
 
-![A screenshot of the .](docs)
+![A screenshot of the footer on a 320px screen.](docs/footer-320.jpg)
 
 2. Small tablet and up (590px)
 
-![A screenshot of the .](docs)
+![A screenshot of the footer on a 590px screen.](docs/footer-590.jpg)
 
 3. Small laptops and up (1024px)
 
-![A screenshot of the .](docs)
+![A screenshot of the footer on a 1024px screen.](docs/footer-1024.jpg)
 
 4. Large Screens (1440px)
 
-![A screenshot of the .](docs)
+![A screenshot of the footer on a 1440px screen.](docs/footer-1440.jpg)
 
 
 ### Game Features
