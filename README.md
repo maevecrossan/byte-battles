@@ -156,11 +156,16 @@ This project was deployed to GitHub pages. The steps I took were as follows:
 
 ## Credits
 ### Content
+
 * The 'Orbitron' font used in this project was sourced from [Google Fonts](https://fonts.google.com/specimen/Orbitron).
 
-* Text glow credits (see inline comments in CSS): [www.geeksforgeeks.com](https://www.geeksforgeeks.org/create-a-glowing-text-shadow-using-html-and-css/)
+* Text glow credits (see inline comments in CSS): [www.geeksforgeeks.com](https://www.geeksforgeeks.org/create-a-glowing-text-shadow-using-html-and-css/).
 
-* X and O CSS shapes (see inline comments in CSS): [Web Dev Simplified](https://www.youtube.com/watch?v=Y-GkMjUZsmM&ab_channel=WebDevSimplified)
+* X and O CSS shapes (see inline comments in CSS): [Web Dev Simplified](https://www.youtube.com/watch?v=Y-GkMjUZsmM&ab_channel=WebDevSimplified).
+
+* Winning combos (see inline comment in JavaScript): [Stack Overflow](https://stackoverflow.com/questions/44449546/finding-a-winning-combination-in-tic-tac-toe).
+
+* Favicon created with [Favicon](https://favicon.io/).
 
 ### Testing Resources
 The following were used for testing (during and post-development):
@@ -170,3 +175,20 @@ The following were used for testing (during and post-development):
 * [W3C CSS Validation Service (CSS)](https://jigsaw.w3.org/css-validator/)
 * [Am I Responsive?](https://ui.dev/amiresponsive)
 * [Contrast Grid](https://contrast-grid.eightshapes.com/)
+
+### Additional Resources
+Below are a list of articles I used to help write my code.
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+https://www.w3schools.com/jsref/prop_element_classlist.asp 
+
+https://www.w3schools.com/jsref/jsref_some.asp
+
+https://www.w3schools.com/jsref/jsref_return.asp
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax 
+
+https://wpshout.com/snippets/css-glow-effect/#gref
