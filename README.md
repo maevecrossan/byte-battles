@@ -3,7 +3,7 @@
 
 ## **Introduction**
 
-Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as both a single or multiplayer game from one device.
+Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as a single or multiplayer game from one device.
 
 > **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
 
@@ -22,25 +22,25 @@ Testing can be found in a separate file here:
 
 * Children who want something colourful, easy to learn, and that they can play with their friends.
 
-* Those who enjoy puzzles who want something easy to pick up and pass the time with. 
+* Those who enjoy puzzles, who want something easy to pick up and pass the time with. 
 
 * Those looking to develop logical thinking skills such as younger students and teachers.
 
-* Retro game enjoyers who enjoy simple game design and nostalgic gaming.
+* Retro game enjoyers who enjoy simple design and nostalgic gaming.
 
 ### User Stories
 
 As a user...
 * I want to pass the time playing a nostalgic game.
-* I want to play a game with a unique but clutter-free environment.
+* I want to play a game with a fun and clutter-free environment.
 * I want to play a game with clear rules and logic.
-* I want to play a game that behaves logically.
+* I want to play a game that behaves predictably.
 * I want to play a game that counts the scores accurately.
 * I want a game that I can play for a long time without any hiccups.
 
 As a business...
-* I want to establish myself in the minds of players through retro inspired game style.
-* I want to build trust with users by providing predictable, high-quality games.
+* I want to establish myself in players' minds through retro-inspired game style.
+* I want to build trust with users by providing a predictable, high-quality experience.
 * I want to create games that users enjoy playing and looking at so that they return frequently.
 * I want users to have a pleasant experience and not be confused by any functionality or instructions.
 
@@ -49,16 +49,18 @@ As a business...
 | Opportunities | Importance | Viability/Feasibility |
 |-----|:-----:|:-----:|
 | Create solo AND multiplayer tic-tac-toe game | 5 | 5 |
-| Create score tallies for both player to monitor progress | 5 | 5 |
+| Create score tallies for both players to monitor progress | 5 | 5 |
 | Create alternative colour schemes | 2 | 2 |
 | Create a player vs CPU game | 3 | 1 |
 | Allow players to choose shapes other than 'X' and 'O' | 1 | 2 |
 | Create additional retro games (e.g. snake) | 1 | 1 |
 
+I wanted to create more features for this game, as well as additional games to flesh out the website and give players more options. However, I was limited by time to learn how to create these features, and secondly how to implement them accurately.
+I discuss the features I would like to add in the 'future developments' section found at the end of this file.
 
 ### Wireframe Mockup
 Below is the initial sketch I created using Procreate on my iPad. Once the game logic had been fully thought out, however, the final appearance had changed.
-For example, what was originally one tally became two. I also decided to not use alerts and instead use hidden divs so I could maintain the aesthetic consistent. 
+For example, what was originally one tally became two. I also decided not to use alerts and instead use hidden divs so I could maintain the aesthetic consistent. 
 
 ![A screenshot of the game page wireframe](docs/rough-mockup-1.png)
 
@@ -71,7 +73,7 @@ All body text is blue, and all buttons are pink with white text. The X's are gre
 
 #### Content Layout
 
-Below are screenshots of how the content is displayed. The screenshots are taken on a 1024px screen. An indepth look at how the content responds on different devices can be found in the testing section.
+Below are screenshots of how the content is displayed. The screenshots are taken on a 1024px screen. An in-depth look at how the content responds on different devices can be found in the testing section.
 
 ##### The Welcome Message
 ![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
@@ -99,7 +101,7 @@ Below are screenshots of how the content is displayed. The screenshots are taken
 
 #### Colour Palette
 
-This is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
+Following is an overview of all the colours used in this project. Every colour combination received a minimum of an AA rating.
 ![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
 
 > **Note:** A detailed breakdown of the colours used together can be found in the testing section
@@ -126,16 +128,16 @@ Testing was moved into a separate file for clarity. It can be found here: [TESTI
 
 ## Future Developments
 
-There are several ways in which I think this project could be improved upon had time not been a factor. While I am happy with the minimal viable product, I feel as though more features could be added to make the game more enjoyable and customisable. 
+There are several ways in which I think this project could be improved upon had time not been a factor. While I am happy with the minimal viable product, I feel additional features could be added to make the game more enjoyable and customisable. 
 
 1. Firstly, I would like to give the user the ability to choose their username. 
 
-2. I would like to introduce a pre-game menu where the user can  pick an alternative character to the traditional 'X' and 'O'. I feel as though this could also provide an opportunity to increase brand awareness by creating unique characters that people could then associate with the game.
+2. I would like to introduce a pre-game menu where the user can pick an alternative character to the traditional 'X' and 'O'. I feel as though this could also provide an opportunity to increase brand awareness by creating unique characters that people could then associate with the game.
 
 3. I would also like to add a true multiplayer feature where a link can be sent to invite another player on another device to the game.
 
-4. Another feature that I would like to add is a scoreboard that remembers previous games. Friends can create their own games and keep revisitng to add to the scoreboard. 
+4. Another feature that I would like to add is a scoreboard that remembers previous games. Friends can create private games and keep revisiting them to add to the scoreboard. 
 
-5. I would like to include is a theme-changer. I understand that gamers enjoy different aesthetics and play in different environments, so I feel as though giving them the option to change the colours of the game would be a welcomed feature.
+5. I would like to include a theme-changer. I understand that gamers enjoy different aesthetics and play in varying environments, so I feel giving them the option to change the theme would be a welcomed feature.
 
 6. Another feature I would like to add is a sound effects toggle. Some players like to have sound effects, while others don't. I think adding small sound effects for when slots are clicked or a new game is started could add more interactivity to the game.
