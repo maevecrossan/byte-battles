@@ -143,6 +143,38 @@ Below is the 'next round' button. Its appearance is maintained across all screen
 
 #### Colour Palette
 
+The colours used in this project were chosen early in development. The vibrant and contrasting colours were helpful when styling the elements, so the colour combinations were tested early.
+
+
+Following is an overview of all the colours used in this project. Every colour combination received a minimum of an AA rating.
+![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
+
+| Colour Name | Codes | Use |
+|-----|:-----:|:-----:|
+| Purple | #1f004b/rgb(31, 0, 75) | Page background |
+| White | #ffffff/rgb(255, 255, 255) | Button text |
+| Pink | #d10575/rgb(209, 5, 117) | Button background |
+| Bright Green | #bbff00/rgb(187, 255, 0) | Player X |
+| Bright Pink | #ff00fb/rgb(255, 0, 251)| Player O |
+| Bright Blue | #54efea/rgb(84, 239, 234) | Body text |
+
+The following is a series of screenshots demonstrating the colours used together for clarity.
+
+##### White and purple
+![A screenshot of the white and purple contrast rating.](docs/white-purple-contrast-grid-1.png)
+
+##### Blue and purple
+![A screenshot of the blue and purple contrast rating.](docs/blue-purple-contrast-grid-1.png)
+
+##### Green and purple
+![A screenshot of the green and purple contrast rating.](docs/green-purple-contrast-grid-1.png)
+
+##### Pink and purple
+![A screenshot of the pink and purple contrast rating.](docs/pink-purple-contrast-grid-1.png)
+
+##### Pink and white
+![A screenshot of the pink and white contrast rating.](docs/white-pink-contrast-grid-1.png)
+
 ### Post Developmental Testing
 #### Validator Testing
 ##### W3C 
