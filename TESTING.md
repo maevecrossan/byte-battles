@@ -215,7 +215,7 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.git
 
 ##### JS Hint
 
-Some warnings were noted in JS Hint. These initial warnings will be discussed in the TESTING.md file. Below, however, is a screenshot of JS Hint upon project completion.
+Some warnings were noted in JS Hint. Below, however, is a screenshot of JS Hint upon project completion. There were, however, initial warnings that are discussed in the bugs and fixes section below.
 
 ![A screenshot of JS Hint metrics.](docs/js-hint-final-metrics.png)
 
@@ -224,7 +224,43 @@ Some warnings were noted in JS Hint. These initial warnings will be discussed in
 No performance or accessibility issues were found when checked with Lightouse in chrome devtools.
 
 **Mobile Test**
-![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-1.png)
+![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-2.png)
 
 **Desktop Test**
-![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-1.png)
+![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-2.png)
+
+### Bugs and Fixes
+
+There were several bugs encountered during the development of this project. The bugs primarily happened when writing the JavaScript.
+
+#### 1. 'boardSlots' not defined.
+
+![A screenshot of boardSlots console error.](docs/board-slots-not-defined.png)
+
+This error occured once the X's and O's were created with CSS and the event listeners were added to the board slots. The issue was fixed by defining the board slots in the relevant functions. 
+
+![A screenshot of the boardSlots variable.](docs/board-slots-variable.png)
+
+The variable was later added to the global scope to prevent repetition and  confusing syntax. Below you can see the slot event working correctly.
+
+![A screenshot of boardSlots console successfully logging the event.](docs/board-slots-defined.png)
+
+
+#### 2. The current player was not switching from X to O.
+
+As you can see from above, the player was not switching after occupying a slot. 
+I began firstly by fixing the drawResult function (error seen in log above). I think checked that the function had been fixed and to see if it had affected the player swapping function.
+
+![A screenshot of the console log after fixing drawResult function.](docs/draw-result-fixed.png)
+
+It seemed as though the ternary operator wasn't alteranting and reassigning the currentPlayer properly. 
+
+![A screenshot of the inital player-swapping code.](docs/ternary-code-inital.png)
+
+The error came from using the wrong name (playerX and playerO). I replaced the name with the correct one ('x' and 'o').
+
+![A screenshot of the fixed player-swapping code.](docs/ternary-code-fixed.png)
+
+
+#### 3. The players characters stopped swapping.
+
