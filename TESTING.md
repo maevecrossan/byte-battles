@@ -141,7 +141,7 @@ Below is the 'next round' button. Its appearance is maintained across all screen
 
 ### Developmental Testing
 
-#### Colour Palette
+#### Colour Contrast Grid
 
 The colours used in this project were chosen early in development. The vibrant and contrasting colours were helpful when styling the elements, so the colour combinations were tested early.
 
@@ -158,22 +158,29 @@ Following is an overview of all the colours used in this project. Every colour c
 | Bright Pink | #ff00fb/rgb(255, 0, 251)| Player O |
 | Bright Blue | #54efea/rgb(84, 239, 234) | Body text |
 
-The following is a series of screenshots demonstrating the colours used together for clarity.
 
-##### White and purple
-![A screenshot of the white and purple contrast rating.](docs/white-purple-contrast-grid-1.png)
+The following is a detailed comparison of the colour combinations used in this project.
 
-##### Blue and purple
-![A screenshot of the blue and purple contrast rating.](docs/blue-purple-contrast-grid-1.png)
+1. Blue text (#54efea) on purple background (#1f004b).
 
-##### Green and purple
-![A screenshot of the green and purple contrast rating.](docs/green-purple-contrast-grid-1.png)
+![A screenshot of the blue/purple colour contrast grid.](docs/blue-purple-contrast-grid-1.png)
 
-##### Pink and purple
-![A screenshot of the pink and purple contrast rating.](docs/pink-purple-contrast-grid-1.png)
+2. Green player X (#bbff00) on purple background (#1f004b).
 
-##### Pink and white
-![A screenshot of the pink and white contrast rating.](docs/white-pink-contrast-grid-1.png)
+![A screenshot of the green/purple colour contrast grid.](docs/green-purple-contrast-grid-1.png)
+
+3. Pink player O (#ff00fb) on purple background (#1f004b).
+
+![A screenshot of the green/purple colour contrast grid.](docs/pink-purple-contrast-grid-1.png)
+
+4. White game grid (#ffffff) on purple background (#1f004b).
+
+![A screenshot of the white/purple colour contrast grid.](docs/white-purple-contrast-grid-1.png)
+
+5. Pink button (#d10575) with white text (#ffffff).
+
+![A screenshot of the pink/white colour contrast grid](docs/white-pink-contrast-grid-1.png)
+
 
 ### Post Developmental Testing
 #### Validator Testing
@@ -204,26 +211,3 @@ No performance or accessibility issues were found when checked with Lightouse in
 
 **Desktop Test**
 ![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-1.png)
-
-#### Contrast Grid
-
-Below is an overview of all the colours used in this project. All colours received a AA or AAA rating.
-
-![An screenshot of the colour contrast grid showing all colours used.](docs/contrast-grid-overview-1.png)
-
-The following is a detailed showing of the colour combinations used in this project.
-
-1. Blue text (#54efea) on purple background (#1f004b).
-![A screenshot of the blue/purple colour contrast grid.](docs/blue-purple-contrast-grid-1.png)
-
-2. Green player X (#bbff00) on purple background (#1f004b).
-![A screenshot of the green/purple colour contrast grid.](docs/green-purple-contrast-grid-1.png)
-
-3. Pink player O (#ff00fb) on purple background (#1f004b).
-![A screenshot of the green/purple colour contrast grid.](docs/pink-purple-contrast-grid-1.png)
-
-4. White game grid (#ffffff) on purple background (#1f004b).
-![A screenshot of the white/purple colour contrast grid.](docs/white-purple-contrast-grid-1.png)
-
-5. Pink button (#d10575) with white text (#ffffff).
-![A screenshot of the pink/white colour contrast grid](docs/white-pink-contrast-grid-1.png)
