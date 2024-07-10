@@ -10,6 +10,9 @@ Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played a
 Link to live website: 
 https://maevecrossan.github.io/byte-battles/
 
+Testing can be found in a separate file here: 
+[TESTING.md](TESTING.md)
+
 ![Am I Responsive screenshot](docs/am-i-responsive-1.png)
 
 ## UX
@@ -66,6 +69,34 @@ For example, what was originally one tally became two. I also decided to not use
 Across all screen sizes, the content will be aligned in the centre. This includes the hidden messages.
 All body text is blue, and all buttons are pink with white text. The X's are green when placed on the board, corresponding to the green glow around player X's tally. Player O has the same features but in pink.
 
+#### Content Layout
+
+Below are screenshots of how the content is displayed. The screenshots are taken on a 1024px screen. An indepth look at how the content responds on different devices can be found in the testing section.
+
+##### The Welcome Message
+![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
+
+##### The Game Board
+![A screenshot of the game board on a 1024px screen.](docs/board-1024.jpg)
+
+##### The Score Tallies
+![A screenshot of the player tallies on a 1024px screen.](docs/tallies-1024.jpg)
+
+##### The New Game Button
+![A screenshot of the pink new game button.](docs/new-game-button.jpg)
+
+##### The Next Round Button
+![A screenshot of the pink next round button.](docs/next-round-button.jpg)
+
+##### The Warning Message
+![A screenshot of the warning message on a 1024px screen.](docs/warning-1024.jpg)
+
+##### The Win Message
+![A screenshot of the win message on a 1024px screen.](docs/win-1024.jpg)
+
+##### The Draw Message
+![A screenshot of the draw message on a 1024px screen.](docs/draw-1024.jpg)
+
 #### Colour Palette
 
 This is an overview of all the colours used in this project. Every colour combination received at minimum an AA rating.
@@ -87,193 +118,24 @@ This is an overview of all the colours used in this project. Every colour combin
 There is only one font used in this project. 'Orbitron' was downloaded from Google Fonts. Depending on its location, varying font weights were added to help readability. I chose this retro, arcade-like font to add another layer of nostalgia to the project.
 A glow was also added to the larger text to emulate a neon effect and to provide visual differentiation. 
 
-#### Content Layout------------
-
-Below are a series of screenshots demonstrating how the hidden messages are displayed among the varying size screens. As you will see in a moment, I chose to make the game responsive based on four different screen sizes: 
-* 320px (mobile) 
-* 590px (small tablet) 
-* 1024px (small laptops)
-* 1440px (large screens) and up
-
-The choice of screensize parameters laid out above will be explained in the game features section. 
-
-##### Welcome Message
-
-1. Mobile
-
-![A screenshot of the welcome message on a 320px screen.](docs/welcome-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the welcome message on a 590px screen.](docs/welcome-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the welcome message on a 1024px screen.](docs/welcome-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.jpg)
-
-##### Warning Message
-
-1. Mobile
-
-![A screenshot of the warning message on a 320px screen.](docs/warning-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the warning message on a 590px screen.](docs/warning-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the warning message on a 1024px screen.](docs/warning-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the warning message on a 1440px screen.](docs/warning-1440.jpg)
-
-##### Win Message
-
-1. Mobile
-
-![A screenshot of the win message on a 320px screen.](docs/win-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the win message on a 590px screen.](docs/win-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the win message on a 1024px screen.](docs/win-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the win message on a 1440px screen.](docs/win-1440.jpg)
-
-##### Draw Message
-
-1. Mobile
-
-![A screenshot of the draw message on a 320px screen.](docs/draw-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the draw message on a 590px screen.](docs/draw-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the draw message on a 1024px screen.](docs/draw-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the win message on a 1440px screen.](docs/draw-1440.jpg)
-
-
-### Game Features
-Regardless of screen size, the page displays the game board, two player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
-
-#### Game Board
-
-1. Mobile
-
-![A screenshot of the game board on a 320px screen.](docs/board-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the game board on a 590px screen.](docs/board-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the game board on a 1024px screen.](docs/board-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the game board on a 1440px screen.](docs/board-1440.jpg)
-
-#### Score Tallies
-As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible I wanted to avoid the player needing to scroll excessively to see their scores. 
-Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement and much as I could, so I chose the second screensize to be 590px. 
-
-1. Mobile
-
-![A screenshot of the player tallies on a 320px screen.](docs/tallies-320.jpg)
-
-2. Small tablet and up (590px)
-
-![A screenshot of the player tallies on a 590px screen.](docs/tallies-590.jpg)
-
-3. Small laptops and up (1024px)
-
-![A screenshot of the player tallies on a 1024px screen.](docs/tallies-1024.jpg)
-
-4. Large Screens (1440px)
-
-![A screenshot of the player tallies on a 1440px screen.](docs/tallies-1440.jpg)
-
-#### New Game Button
-Below is the 'new game' button. It's appearance is maintained across all screen sizes and is always found beneath the player tallies.
-
-![A screenshot of the pink new game button.](docs/new-game-button.jpg)
-
-#### Next Round Button
-Below is the 'next round' button. Its appearance is maintained across all screen sizes. It is only found in the 'draw' and 'win' messages.
-
-![A screenshot of the pink next round button.](docs/next-round-button.jpg)
-
 ## Testing
-### Developmental Testing
 
+Testing was moved into a separate file for clarity. It can be found here: [TESTING.md](TESTING.md).
 
-### Post Developmental Testing
-#### Validator Testing
-##### W3C 
+> **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
 
-No errors were found when checked with the W3C HTML Validator.
+## Future Developments
 
-![A screenshot of the W3C HTML Validator results.](docs/w3c-html-bb-1.png)
-https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F
+There are several ways in which I think this project could be improved upon had time not been a factor. While I am happy with the minimal viable product, I feel as though more features could be added to make the game more enjoyable and customisable. 
 
-No errors were found when checked with the W3C CSS Validator.
+1. Firstly, I would like to give the user the ability to choose their username. 
 
-![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
-https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css
+2. I would like to introduce a pre-game menu where the user can  pick an alternative character to the traditional 'X' and 'O'. I feel as though this could also provide an opportunity to increase brand awareness by creating unique characters that people could then associate with the game.
 
-##### JS Hint
+3. I would also like to add a true multiplayer feature where a link can be sent to invite another player on another device to the game.
 
-Some warnings were noted in JS Hint. These initial warnings will be discussed in the TESTING.md file. Below, however, is a screenshot of JS Hint upon project completion.
+4. Another feature that I would like to add is a scoreboard that remembers previous games. Friends can create their own games and keep revisitng to add to the scoreboard. 
 
-![A screenshot of JS Hint metrics.](docs/js-hint-final-metrics.png)
+5. I would like to include is a theme-changer. I understand that gamers enjoy different aesthetics and play in different environments, so I feel as though giving them the option to change the colours of the game would be a welcomed feature.
 
-#### Lighthouse 
-
-No performance or accessibility issues were found when checked with Lightouse in chrome devtools.
-
-**Mobile Test**
-![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-1.png)
-
-**Desktop Test**
-![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-1.png)
-
-#### Contrast Grid
-
-Below is an overview of all the colours used in this project. All colours received a AA or AAA rating.
-
-![An screenshot of the colour contrast grid showing all colours used.](docs/contrast-grid-overview-1.png)
-
-The following is a detailed showing of the colour combinations used in this project.
-
-1. Blue text (#54efea) on purple background (#1f004b).
-![A screenshot of the blue/purple colour contrast grid.](docs/blue-purple-contrast-grid-1.png)
-
-2. Green player X (#bbff00) on purple background (#1f004b).
-![A screenshot of the green/purple colour contrast grid.](docs/green-purple-contrast-grid-1.png)
-
-3. Pink player O (#ff00fb) on purple background (#1f004b).
-![A screenshot of the green/purple colour contrast grid.](docs/pink-purple-contrast-grid-1.png)
-
-4. White game grid (#ffffff) on purple background (#1f004b).
-![A screenshot of the white/purple colour contrast grid.](docs/white-purple-contrast-grid-1.png)
-
-5. Pink button (#d10575) with white text (#ffffff).
-![A screenshot of the pink/white colour contrast grid](docs/white-pink-contrast-grid-1.png)
+6. Another feature I would like to add is a sound effects toggle. Some players like to have sound effects, while others don't. I think adding small sound effects for when slots are clicked or a new game is started could add more interactivity to the game.
