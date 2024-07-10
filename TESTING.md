@@ -2,18 +2,20 @@
 
 ## **Testing**
 
+### Developmental Testing
 
-### Responsiveness
+The following section explains the steps taken and aspects considered during the development process.
 
-Below are a series of screenshots demonstrating how the hidden messages are displayed among the varying size screens. As you will see in a moment, I chose to make the game responsive based on four different screen sizes: 
-* 320px (mobile) 
-* 590px (small tablet) 
-* 1024px (small laptops)
-* 1440px (large screens) and up
+#### Responsiveness
 
-The choice of screensize parameters laid out above will be explained in the game features section. 
+I designed for mobiles first, using 320px as my starting point. I then progressed to 590px, 1024px and 1440px. I chose these incremenents largely due to the layout out the player tally.
+I wanted to avoid the player scrolling as much as possible, so when possible, I decided to make the tally boxes to expand horizontally. 
 
-#### Welcome Message
+Below are a series of screenshots demonstrating how the content is displayed across four aforementioned screen sizes. As you will see, all content is centered. This was done so that if two players were playing, both players could see the game board and their respective tallies easily. The centered content would also allows for additional features to be displayed along the sides, such as scoreboard, game settings, etc.
+
+The responsiveness of each element was tested immediately and repeatedly after styling each element.
+
+##### Welcome Message
 
 1. Mobile
 
@@ -31,7 +33,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the welcome message on a 1440px screen.](docs/welcome-1440.jpg)
 
-#### Warning Message
+##### Warning Message
 
 1. Mobile
 
@@ -49,7 +51,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the warning message on a 1440px screen.](docs/warning-1440.jpg)
 
-#### Win Message
+##### Win Message
 
 1. Mobile
 
@@ -67,7 +69,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the win message on a 1440px screen.](docs/win-1440.jpg)
 
-#### Draw Message
+##### Draw Message
 
 1. Mobile
 
@@ -85,7 +87,7 @@ The choice of screensize parameters laid out above will be explained in the game
 
 ![A screenshot of the win message on a 1440px screen.](docs/draw-1440.jpg)
 
-#### Social Media Links (footer)
+##### Social Media Links (footer)
 
 1. Mobile
 
@@ -104,10 +106,10 @@ The choice of screensize parameters laid out above will be explained in the game
 ![A screenshot of the footer on a 1440px screen.](docs/footer-1440.jpg)
 
 
-### Game Features
+#### Game Features
 Regardless of screen size, the page displays the game board, two player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
 
-#### Game Board
+##### Game Board
 
 1. Mobile
 
@@ -125,8 +127,9 @@ Regardless of screen size, the page displays the game board, two player tallies 
 
 ![A screenshot of the game board on a 1440px screen.](docs/board-1440.jpg)
 
-#### Score Tallies
+##### Score Tallies
 As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible I wanted to avoid the player needing to scroll excessively to see their scores. 
+
 Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement and much as I could, so I chose the second screensize to be 590px. 
 
 1. Mobile
@@ -145,27 +148,22 @@ Below, you will see how the tallies progressively stretch horizontally to make u
 
 ![A screenshot of the player tallies on a 1440px screen.](docs/tallies-1440.jpg)
 
-#### New Game Button
+##### New Game Button
 Below is the 'new game' button. It's appearance is maintained across all screen sizes and is always found beneath the player tallies.
 
 ![A screenshot of the pink new game button.](docs/new-game-button.jpg)
 
-#### Next Round Button
+##### Next Round Button
 Below is the 'next round' button. Its appearance is maintained across all screen sizes. It is only found in the 'draw' and 'win' messages.
 
 ![A screenshot of the pink next round button.](docs/next-round-button.jpg)
 
-
-## Testing
-
-### Developmental Testing
-
-#### Colour Contrast Grid
+##### Colour Contrast Grid
 
 The colours used in this project were chosen early in development. The vibrant and contrasting colours were helpful when styling the elements, so the colour combinations were tested early.
 
-
 Following is an overview of all the colours used in this project. Every colour combination received a minimum of an AA rating.
+
 ![A screenshot of the contrast grid showing the colours used in the project.](docs/contrast-grid-overview-1.png)
 
 | Colour Name | Codes | Use |
@@ -203,17 +201,17 @@ The following is a detailed comparison of the colour combinations used in this p
 
 ### Post Developmental Testing
 #### Validator Testing
-##### W3C 
+##### W3C
 
 No errors were found when checked with the W3C HTML Validator.
 
 ![A screenshot of the W3C HTML Validator results.](docs/w3c-html-bb-1.png)
-https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F
 
 No errors were found when checked with the W3C CSS Validator.
 
 ![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
-https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
 ##### JS Hint
 
