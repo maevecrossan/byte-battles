@@ -1,3 +1,10 @@
+# **Battle Bytes: Tic-Tac-Toe**
+
+## **Testing**
+
+
+### Responsiveness
+
 Below are a series of screenshots demonstrating how the hidden messages are displayed among the varying size screens. As you will see in a moment, I chose to make the game responsive based on four different screen sizes: 
 * 320px (mobile) 
 * 590px (small tablet) 
@@ -131,8 +138,10 @@ Below is the 'next round' button. Its appearance is maintained across all screen
 ![A screenshot of the pink next round button.](docs/next-round-button.jpg)
 
 ## Testing
+
 ### Developmental Testing
 
+#### Colour Palette
 
 ### Post Developmental Testing
 #### Validator Testing
