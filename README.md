@@ -5,7 +5,7 @@
 
 Battle Bytes: Tic-Tac-Toe is a retro-style tic-tac-toe game that can be played as a single or multiplayer game from one device.
 
-> **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
+> **Note:** Please cmd-click (Mac) or ctrl-click (Windows) on any links to open them in a new tab.
 
 Link to live website: 
 https://maevecrossan.github.io/byte-battles/
@@ -18,7 +18,7 @@ Testing can be found in a separate file here:
 ## UX
 ### Target Audiences
 
-* Casual Gamers of all ages looking for something non-commital, quick to understand and playable across multiple devices.
+* Casual gamers of all ages looking for something non-committal, quick to understand, and playable across multiple devices.
 
 * Children who want something colourful, easy to learn, and that they can play with their friends.
 
@@ -55,11 +55,13 @@ As a business...
 | Allow players to choose shapes other than 'X' and 'O' | 1 | 2 |
 | Create additional retro games (e.g. snake) | 1 | 1 |
 
-I wanted to create more features for this game, as well as additional games to flesh out the website and give players more options. However, I was limited by time to learn how to create these features, and secondly how to implement them accurately.
+I wanted to create more features for this game, as well as additional games to flesh out the website and give players more options. However, I was limited by time to learn how to create these features, and secondly how to implement them.
+
 I discuss the features I would like to add in the 'future developments' section found at the end of this file.
 
 ### Wireframe Mockup
 Below is the initial sketch I created using Procreate on my iPad. Once the game logic had been fully thought out, however, the final appearance had changed.
+
 For example, what was originally one tally became two. I also decided not to use alerts and instead use hidden divs so I could maintain the aesthetic consistent. 
 
 ![A screenshot of the game page wireframe](docs/rough-mockup-1.png)
@@ -69,7 +71,9 @@ For example, what was originally one tally became two. I also decided not to use
 ### General
 
 Across all screen sizes, the content will be aligned in the centre. This includes the hidden messages.
+
 All body text is blue, and all buttons are pink with white text. The X's are green when placed on the board, corresponding to the green glow around player X's tally. Player O has the same features but in pink.
+
 On all devices, the footer sticks to the bottom and houses two social media links. Both links open in new tabs and link to my personal profiles.
 
 #### Content Layout
@@ -122,13 +126,14 @@ Following is an overview of all the colours used in this project. Every colour c
 #### Typography
 
 There is only one font used in this project. 'Orbitron' was downloaded from Google Fonts. Depending on its location, varying font weights were added to help readability. I chose this retro, arcade-like font to add another layer of nostalgia to the project.
+
 A glow was also added to the larger text to emulate a neon effect and to provide visual differentiation. 
 
 ## Testing
 
 Testing was moved into a separate file for clarity. It can be found here: [TESTING.md](TESTING.md).
 
-> **Note:** Please cmd-click (Mac) or ctrl-click(Windows) on any links to open them in a new tab.
+> **Note:** Please cmd-click (Mac) or ctrl-click (Windows) on any links to open them in a new tab.
 
 ## Future Developments
 
@@ -148,6 +153,7 @@ There are several ways in which I think this project could be improved upon had 
 
 ## Deployment
 This project was deployed to GitHub pages. The steps I took were as follows:
+
 1. After selecting and opening the GitHub repository, open the Settings menu. 
 2. Under the Code and Automation on the left, select Pages.
 3. For source, select ‘Deploy from a branch’.
@@ -177,7 +183,7 @@ The following were used for testing (during and post-development):
 * [Contrast Grid](https://contrast-grid.eightshapes.com/)
 
 ### Additional Resources
-Below are a list of articles I used to help write my code.
+Below is a list of articles I used to help write my code.
 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 
