@@ -8,10 +8,10 @@ The following section explains the steps taken and aspects considered during the
 
 #### Responsiveness
 
-I designed for mobiles first, using 320px as my starting point. I then progressed to 590px, 1024px and 1440px. I chose these incremenents largely due to the layout out the player tally.
-I wanted to avoid the player scrolling as much as possible, so when possible, I decided to make the tally boxes to expand horizontally. 
+I designed for mobiles first, using 320px as my starting point. I then progressed to 590px, 1024px, and 1440px. I chose these increments largely due to the layout of the player tally.
+I wanted to avoid the player scrolling as much as possible, so when possible, I decided to make the tally boxes expand horizontally. 
 
-Below are a series of screenshots demonstrating how the content is displayed across four aforementioned screen sizes. As you will see, all content is centered. This was done so that if two players were playing, both players could see the game board and their respective tallies easily. The centered content would also allows for additional features to be displayed along the sides, such as scoreboard, game settings, etc.
+Below are a series of screenshots demonstrating how the content is displayed across four aforementioned screen sizes. As you will see, all content is centred. This was done so that if two players were playing, both players could see the game board and their respective tallies easily. The centred content would also allow for additional features to be displayed along the sides, such as scoreboard, game settings, etc.
 
 The responsiveness of each element was tested immediately and repeatedly after styling each element.
 
@@ -128,9 +128,9 @@ Regardless of screen size, the page displays the game board, two player tallies 
 ![A screenshot of the game board on a 1440px screen.](docs/board-1440.jpg)
 
 ##### Score Tallies
-As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible I wanted to avoid the player needing to scroll excessively to see their scores. 
+As mentioned above, I opted for those four screen parameters out of consideration for the player. Where possible, I wanted to avoid the player needing to scroll excessively to see their scores. 
 
-Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement and much as I could, so I chose the second screensize to be 590px. 
+Below, you will see how the tallies progressively stretch horizontally to make use of the bigger screen size. I wanted to avoid vertical movement as much as I could, so I chose the second screen size to be 590px. 
 
 1. Mobile
 
@@ -149,7 +149,7 @@ Below, you will see how the tallies progressively stretch horizontally to make u
 ![A screenshot of the player tallies on a 1440px screen.](docs/tallies-1440.jpg)
 
 ##### New Game Button
-Below is the 'new game' button. It's appearance is maintained across all screen sizes and is always found beneath the player tallies.
+Below is the 'new game' button. Its appearance is maintained across all screen sizes and is always found beneath the player tallies.
 
 ![A screenshot of the pink new game button.](docs/new-game-button.jpg)
 
@@ -215,7 +215,7 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.git
 
 #### JS Hint
 
-Some warnings were noted in JS Hint. Below, however, is a screenshot of JS Hint upon project completion. There were, however, initial warnings that are discussed in the bugs and fixes section below.
+ Below is a screenshot of JS Hint upon project completion. There were, however, initial warnings in my code that are discussed in the bugs and fixes section below.
 
 ![A screenshot of JS Hint metrics.](docs/js-hint-final-metrics.png)
 
@@ -230,7 +230,7 @@ One alert was noted by the WAVE tool. It suggested that the paragraph under the 
 
 #### Lighthouse 
 
-No performance or accessibility issues were found when checked with Lightouse in chrome devtools.
+No performance or accessibility issues were found when checked with Lighthouse in chrome devtools.
 
 **Mobile Test**
 ![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-2.png)
