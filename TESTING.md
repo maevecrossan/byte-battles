@@ -11,7 +11,7 @@ The following section explains the steps taken and aspects considered during the
 I designed for mobiles first, using 320px as my starting point. I then progressed to 590px, 1024px, and 1440px. I chose these increments largely due to the layout of the player tally.
 I wanted to avoid the player scrolling as much as possible, so when possible, I decided to make the tally boxes expand horizontally. 
 
-Below are a series of screenshots demonstrating how the content is displayed across four aforementioned screen sizes. As you will see, all content is centred. This was done so that if two players were playing, both players could see the game board and their respective tallies easily. The centred content would also allow for additional features to be displayed along the sides, such as scoreboard, game settings, etc.
+Below is a series of screenshots demonstrating how the content is displayed across four aforementioned screen sizes. As you will see, all content is centred. This was done so that if two players were playing, both players could see the game board and their respective tallies easily. The centred content would also allow for additional features to be displayed along the sides, such as a scoreboard, game settings, etc.
 
 The responsiveness of each element was tested immediately and repeatedly after styling each element.
 
@@ -107,7 +107,7 @@ The responsiveness of each element was tested immediately and repeatedly after s
 
 
 #### Game Features
-Regardless of screen size, the page displays the game board, two player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
+Regardless of screen size, the page displays the game board, two-player tallies and a 'new game' button. The size of the screen affects how each element will be displayed as you will see below.
 
 ##### Game Board
 
@@ -230,7 +230,7 @@ One alert was noted by the WAVE tool. It suggested that the paragraph under the 
 
 #### Lighthouse 
 
-No performance or accessibility issues were found when checked with Lighthouse in chrome devtools.
+No performance or accessibility issues were found when checked with Lighthouse in Chrome dev tools.
 
 **Mobile Test**
 ![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-2.png)
@@ -256,11 +256,11 @@ There were several bugs encountered during the development of this project. The 
 
 ![A screenshot of boardSlots console error.](docs/board-slots-not-defined.png)
 
-This error occured once the X's and O's were created with CSS and the event listeners were added to the board slots. The issue was fixed by defining the board slots in the relevant functions. 
+This error occurred once the X's and O's were created with CSS and the event listeners were added to the board slots. The issue was fixed by defining the board slots in the relevant functions. 
 
 ![A screenshot of the boardSlots variable.](docs/board-slots-variable.png)
 
-The variable was later added to the global scope to prevent repetition and  confusing syntax. Below you can see the slot event working correctly.
+The variable was later added to the global scope to prevent repetition and confusing syntax. Below you can see the slot event working correctly.
 
 ![A screenshot of boardSlots console successfully logging the event.](docs/board-slots-defined.png)
 
@@ -268,11 +268,11 @@ The variable was later added to the global scope to prevent repetition and  conf
 #### 2. The current player was not switching from X to O.
 
 As you can see from above, the player was not switching after occupying a slot. 
-I began firstly by fixing the drawResult function (error seen in log above). I think checked that the function had been fixed and to see if it had affected the player swapping function.
+I began firstly by fixing the drawResult function (error seen in log above). I think checked that the function had been fixed and to see if it had affected the player-swapping function.
 
 ![A screenshot of the console log after fixing drawResult function.](docs/draw-result-fixed.png)
 
-It seemed as though the ternary operator wasn't alteranting and reassigning the currentPlayer properly. 
+It seemed as though the ternary operator wasn't alternating and reassigning the currentPlayer properly. 
 
 ![A screenshot of the inital player-swapping code.](docs/ternary-code-inital.png)
 
@@ -283,7 +283,7 @@ The error came from using the wrong name (playerX and playerO). I replaced the n
 
 #### 3. The characters stopped visually swapping.
 
-The console as logging that the players were corrrectly alternating, however this was not being represented visually after a few clicks. I tested a few times to check the error.
+The console was logging that the players were correctly alternating, however this was not being represented visually after a few clicks. I tested it a few times to check the error.
 
 ![A screenshot of X occupying more than half the boxes.](docs/characters-not-changing-1.png)
 
@@ -291,7 +291,7 @@ A second test to confirm there was an error.
 
 ![A screenshot of X occupying more than half the boxes in a second test.](docs/characters-not-changing-2.png)
 
-I updated the code to explicitly changed characters by toggling between playerX and playerO classes, which fixed the issue.
+I updated the code to explicitly change characters by toggling between playerX and playerO classes, which fixed the issue.
 
 ![A screenshot of the updated code.](docs/characters-not-changing-3.png)
 
@@ -317,11 +317,11 @@ When starting a new game after a win, only X's showed on the board.
 
 ![A screenshot of x's only on the board](docs/only-x-1.png)
 
-I checked to see what the console was logging and added console log to function. I then checked again to see if the error only occured when a new round began, and to see if the console was logging the next round correctly.
+I checked to see what the console was logging and added a console log to the function. I then checked again to see if the error only occurred when a new round began, and to see if the console was logging the next round correctly.
 
 ![A screenshot of the console logging the next round.](docs/only-x-2.png)
 
-Before rewriting anything, I tested to see if the error occured after both wins and draws, which it did. 
+Before rewriting anything, I tested to see if the error occurred after both wins and draws, which it did. 
 
 ![A screenshot of error after win](docs/only-x-3.png)
 
@@ -343,7 +343,7 @@ I then tested for the error through a win and a draw, both logging no errors and
 
 #### 6. Unused Variables Warning (JS Hint)
 
-As mentioned previosuly, JS Hint pointed out a few problems when first checking my code. The first issues I tackled were the unused variables.  
+As mentioned previously, JS Hint pointed out a few problems when first checking my code. The first issues I tackled were the unused variables.  
 
 ![A screenshot of code in js hint with unused variable warnings on the right.](docs/js-hint-unused-variables-warning.png)
 
@@ -353,8 +353,8 @@ I rewrote the function to be a little tidier and removed the unused variables.
 
 #### 7. Event listeners in loops.
 
-JS Hint also warned that having event listeners within loop could cause confusion. The fix here was simple - I removed the event listeners from the loops. The one causing the largest error and impacting most functions was the one concerning the DOM content. 
+JS Hint also warned that having event listeners within loops could cause confusion. The fix here was simple - I removed the event listeners from the loops. The one causing the largest error and impacting most functions was the one concerning the DOM content. 
 
-Below , you can see how the board slot event listener is now in it's own function (line 24).
+Below, you can see how the board slot event listener is now in its own function (line 24).
 
 ![A screenshot of the simplified DOMContentLoaded function.](docs/js-hint-confusing-DOM-function-fix.png)
