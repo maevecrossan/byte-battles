@@ -262,5 +262,80 @@ The error came from using the wrong name (playerX and playerO). I replaced the n
 ![A screenshot of the fixed player-swapping code.](docs/ternary-code-fixed.png)
 
 
-#### 3. The players characters stopped swapping.
+#### 3. The characters stopped visually swapping.
 
+The console as logging that the players were corrrectly alternating, however this was not being represented visually after a few clicks. I tested a few times to check the error.
+
+![A screenshot of X occupying more than half the boxes.](docs/characters-not-changing-1.png)
+
+A second test to confirm there was an error. 
+
+![A screenshot of X occupying more than half the boxes in a second test.](docs/characters-not-changing-2.png)
+
+I updated the code to explicitly changed characters by toggling between playerX and playerO classes, which fixed the issue.
+
+![A screenshot of the updated code.](docs/characters-not-changing-3.png)
+
+#### 4. O points not incrementing.
+
+After creating the functions to increment the scores, I began testing them but found the scores for playerO were not incrementing.
+
+Below is a screenshot of the O losses not incrementing.
+
+![A screenshot of the O losses not working.](docs/o-loss-not-incr-1.png)
+
+I then tested to see if the same issue was happening for the wins, which it was.
+
+![A screenshot of the O wins not working.](docs/o-wins-not-incr-1.png)
+
+The issue was fixed with a simple change from 'player' to 'currentPlayer' in parentheses after the addWinPoint function name. The mistake was having a knock-on effect and causing the other functions to stop working.
+
+![A screenshot of the fixed code for the addWin function.](docs/score-incrementing-code-fix.png)
+
+#### 5. Only X's showing.
+
+When starting a new game after a win, only X's showed on the board.
+
+![A screenshot of x's only on the board](docs/only-x-1.png)
+
+I checked to see what the console was logging and added console log to function. I then checked again to see if the error only occured when a new round began, and to see if the console was logging the next round correctly.
+
+![A screenshot of the console logging the next round.](docs/only-x-2.png)
+
+Before rewriting anything, I tested to see if the error occured after both wins and draws, which it did. 
+
+![A screenshot of error after win](docs/only-x-3.png)
+
+To fix the problem, I wanted to tidy up the console as it was getting cluttered and increasingly difficult to follow. I felt it was no longer needed to log if the 'combo' checks. 
+
+![A screenshot of error after draw](docs/only-x-4.png)
+
+I realised that one little line of code was causing the error, and after removing that one line, the problem was fixed. 
+
+![A screenshot of code before the fix.](docs/only-x-5.png)
+
+The updated code:
+
+![A screenshot of code after the fix.](docs/only-x-6.png)
+
+I then tested for the error through a win and a draw, both logging no errors and switching correctly once again.
+
+![A screenshot of the fixed game and tidied console log.](docs/only-x-7.png)
+
+#### 6. Unused Variables Warning (JS Hint)
+
+As mentioned previosuly, JS Hint pointed out a few problems when first checking my code. The first issues I tackled were the unused variables.  
+
+![A screenshot of code in js hint with unused variable warnings on the right.](docs/js-hint-unused-variables-warning.png)
+
+I rewrote the function to be a little tidier and removed the unused variables.
+
+![A screenshot of the fixed code in js hint with no unused variable warnings on the right.](docs/js-hint-unused-variables-fix.png)
+
+#### 7. Event listeners in loops.
+
+JS Hint also warned that having event listeners within loop could cause confusion. The fix here was simple - I removed the event listeners from the loops. The one causing the largest error and impacting most functions was the one concerning the DOM content. 
+
+Below , you can see how the board slot event listener is now in it's own function (line 24).
+
+![A screenshot of the simplified DOMContentLoaded function.](docs/js-hint-confusing-DOM-function-fix.png)
