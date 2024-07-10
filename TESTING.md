@@ -213,11 +213,20 @@ No errors were found when checked with the W3C CSS Validator.
 ![A screenshot of the W3C CSS Validator results.](docs/w3c-css-bb-1.png)
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaevecrossan.github.io%2Fbyte-battles%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
-##### JS Hint
+#### JS Hint
 
 Some warnings were noted in JS Hint. Below, however, is a screenshot of JS Hint upon project completion. There were, however, initial warnings that are discussed in the bugs and fixes section below.
 
 ![A screenshot of JS Hint metrics.](docs/js-hint-final-metrics.png)
+
+#### WAVE Accessibility Evaluation Tool.
+
+![A screenshot of the WAVE evaluation.](docs/wave-test-1.jpg)
+
+One alert was noted by the WAVE tool. It suggested that the paragraph under the draw message could be a heading, but I disagree as it is only a reminder and not vital information. 
+
+![A screenshot of the heading alert.](docs/wave-test-alert.jpg)
+
 
 #### Lighthouse 
 
