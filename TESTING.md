@@ -233,10 +233,10 @@ One alert was noted by the WAVE tool. It suggested that the paragraph under the 
 No performance or accessibility issues were found when checked with Lighthouse in Chrome dev tools.
 
 **Mobile Test**
-![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-2.png)
+![Screenshot of the lighthouse mobile test.](docs/lighthouse-mobile-3.png)
 
 **Desktop Test**
-![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-2.png)
+![Screenshot of the lighthouse desktop test.](docs/lighthouse-desktop-3.png)
 
 #### Performance Testing
 
